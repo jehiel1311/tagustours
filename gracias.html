@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tagus Tours | Explore Lisbon</title>
+    <link rel="icon" href="/img/Logo Icono2.ico">
+    <link rel="preload" href="Css/Normalize.css" as="style">
+    <link rel="stylesheet" href="Css/Normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Swiper Testimonios -->
+    <link rel="stylesheet" href="/Css/cdn.jsdelivr.net_npm_swiper@9.4.1_swiper-bundle.min.css">
+    <link rel="preload" href="Css/Styles.css" as="style">
+    <link rel="stylesheet" href="Css/Styles.css">
+           <!-- Otros elementos del head -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+            <!-- Footer Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+            <!--INSTAGRAM  -->
+    <link rel="stylesheet" type="text/css" href="Css/Styles.css">
+<!-- galeria de imagenes -->
+
+
+    <script async src="//www.instagram.com/embed.js"></script>        
+</head>
+
+<header>
+  <!-- Botón de WhatsApp -->
+  <div class="whatsapp-container">
+    <div id="whatsappBtn" class="whatsapp-icon" onmouseover="mostrarGreeting()" onclick="mostrarDialogo()" onmouseout="ocultarGreeting()"></div>
+    <div class="whatsapp-greeting" id="greeting">Hello :)</div>
+</div>
+
+<div id="dialogo" class="mensaje__whatsapp dialogo hidden">
+    <div class="mensaje__whatsapp__globo">
+        <div class="mensaje__whatsapp__globo_1"></div>
+        <div class="mensaje__whatsapp__globo_2">
+            <h4>How may I assist you? </h4>
+        </div>
+    </div>
+    <a class="mensaje__whatsapp__x" onclick="cerrarDialogo()">x</a>
+    <div class="mensaje__whatsapp__dialogo">
+        <textarea id="mensaje" class="mensaje-input mensaje__whatsapp__chat" placeholder="Your messenger here"></textarea>
+        <button class="enviar-btn mensaje__whatsapp__enviar" onclick="enviarWhatsApp()"></button>
+    </div>
+    <div>
+        <img src="/img/fondo chat.png">
+    </div>
+</div>
+
+
+  <!--fin - Botón de WhatsApp -->
+
+</header>
+     <section>
+        <main id="contenido__nosotros">
+            <div class="header-nav nav-mod__nosotros">
+                <div class="contenedor-nav">
+                    <a href="index.html">
+                        <img src="img/LOGO 02 Sin fondo copia.png" alt="Tagus Tour" class="logo">
+                    </a>
+                    <input type="checkbox" id="check">
+                    <label for="check" class="bars__menu">
+                       <span class="line1__bars-menu"></span>
+                       <span class="line2__bars-menu"></span>
+                        <span class="line3__bars-menu"></span> 
+                   </label> 
+                         <ul class="nav-menu">
+                             <li><a href="index.html">Home</a></li>
+                             <li><a href="servicios.html">Tours</a></li>
+                             <li><a href="nosotros.html">About</a></li>
+                             <li><a class="active" href="contacto.html">Contact Us</a></li>
+                         </ul>      
+                 </div>                 
+            </div>
+    </section>
+    <section class="container__agradecimiento">
+            <div class="box__agradecimiento">
+                    <h3>Tank You!</h3>
+                    <p>We got your message. <span>We will reply to you shortly.</span></p>
+                    <p>Visit us on our networks, you will see people being very happy.</p>
+                    <a href="https://www.instagram.com/tagus_tours_lisbon/" class="boton" target="_blank">Go To Instagram</a>
+            </div>
+    </section>
+        
+    </div> 
+<div class="follow-instagram">
+        <h3>Follow us on Instagram</h3>
+        <a href="https://www.instagram.com/tagus_tours_lisbon/" target="_blank"> <i class="fab fa-instagram"></i> @tagus_tours_lisbon </a>
+</div>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-row">
+            <div class="footer-links">
+                <h4>Tagus Tours</h4>
+                <li> <a class="active" href="index.html">Home</a></li>
+                <li> <a href="servicios.html">Tours</a></li>
+                <li> <a href="nosotros.html">About</a></li>
+                <li> <a href="contacto.html">Contact Us</a></li>
+            </div>
+            <div class="footer-links">
+                <h4>Experiences</h4>
+                <li> <a href="servicios.html#suggestion">Our Suggestion!</a></li>
+                <li> <a href="servicios.html#tuktuk" target="_blank">Tuk Tuk</a></li>
+                <li> <a href="servicios.html#bike" target="_blank">Bike</a></li>
+                <li> <a href="servicios.html#walking" target="_blank">Walking</a></li>
+                <!-- <li> <a href="#">Sintra</a></li> -->
+            </div>
+            <div class="footer-links">
+                <h4>Follows</h4>
+                <div class="social-link">
+                    <a href="https://www.facebook.com/tagustourslisbon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/tagus_tours_lisbon/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/351933848910" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <div class="footer-complaints-book">
+                    <h4>Complaints Book</h4>
+                    <div class="reclamos">
+                        <!-- <li> <a><i class="fab fa-facebook-f"></i></a> -->
+                       <a href="https://www.livroreclamacoes.pt/INICIO/" target="_blank">
+                        <img src="img/libro de reclamos blanco.png"  class="libro-reclamos">
+                       </a>
+                    </div>
+                </div>   
+            </div>          
+        </div>
+    </div>
+    <div class="derechos">
+        <p>All rights reserved. Tagus Tours Lisbon 2024</p>
+    </div>
+</footer>
+<!-- swipper Testimonial -->
+<script src="JS/slidertestimonio.js"></script>
+
+<script src="/JS/script.js"></script>
+
+
+</body>
+
+
+</html>

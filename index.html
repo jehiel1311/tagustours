@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tagus Tours | Explore Lisbon</title>
+    <!-- Prefetch -->
+    <link rel="Prefetch" href="servicios.html" as="document">
+    <link rel="icon" href="/img/Logo Icono2.ico">
+    <link rel="preload" href="Css/Normalize.css" as="style">
+    <link rel="stylesheet" href="Css/Normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Swiper Testimonios -->
+    <link rel="stylesheet" href="/Css/cdn.jsdelivr.net_npm_swiper@9.4.1_swiper-bundle.min.css">
+    <link rel="preload" href="Css/Styles.css" as="style">
+    <link rel="stylesheet" href="Css/Styles.css">
+           <!-- Otros elementos del head -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+            <!-- Footer Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+            <!--INSTAGRAM  -->
+    <link rel="stylesheet" type="text/css" href="Css/Styles.css">
+    <link rel="stylesheet" href="assets/css/main.css" />
+<!-- galeria de imagenes -->
+
+
+
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>       
+</head>
+
+<header>
+   
+        
+ 
+  <!-- Botón de WhatsApp -->
+  <div class="whatsapp-container">
+    <div id="whatsappBtn" class="whatsapp-icon" onmouseover="mostrarGreeting()" onclick="mostrarDialogo()" onmouseout="ocultarGreeting()"></div>
+    <div class="whatsapp-greeting" id="greeting">Hello :)</div>
+</div>
+
+<div id="dialogo" class="mensaje__whatsapp dialogo hidden">
+    <div class="mensaje__whatsapp__globo">
+        <div class="mensaje__whatsapp__globo_1"></div>
+        <div class="mensaje__whatsapp__globo_2">
+            <h4>How may I assist you? </h4>
+        </div>
+    </div>
+    <a class="mensaje__whatsapp__x" onclick="cerrarDialogo()">x</a>
+    <div class="mensaje__whatsapp__dialogo">
+        <textarea id="mensaje" class="mensaje-input mensaje__whatsapp__chat" placeholder="Your messenger here"></textarea>
+        <button class="enviar-btn mensaje__whatsapp__enviar" onclick="enviarWhatsApp()"></button>
+    </div>
+    <div>
+        <img src="/img/fondo chat.png">
+    </div>
+</div>
+
+
+  <!--fin - Botón de WhatsApp -->
+
+
+      <div class="header-nav">
+        <div class="contenedor-nav">
+            <a href="index.html">
+                <img src="img/LOGO 02 Sin fondo copia.png" alt="Tagus Tour" class="logo">
+            </a>
+            <input type="checkbox" id="check">
+            <label for="check" class="bars__menu">
+               <span class="line1__bars-menu"></span>
+               <span class="line2__bars-menu"></span>
+                <span class="line3__bars-menu"></span> 
+           </label> 
+                 <ul class="nav-menu">
+                     <li><a class="active" href="#">Home</a></li>
+                     <li><a href="servicios.html">Tours</a></li>
+                     <li><a href="nosotros.html">About</a></li>
+                     <li><a href="contacto.html">Contact Us</a></li>
+                 </ul>      
+         </div>
+    </div>
+</header>
+<section class="home is-preload">
+     <main id="contenido-lisbon">
+        <div id="promo">
+            <h1> More than a tour... </h1>
+            <span> A life experience! </span>
+            <p>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-2" width="64" height="64"
+                    viewBox="0 0 24 24" stroke-width="1.5" stroke="#00abfb" fill="none" stroke-linecap="round"
+                    stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M12 18.5l-3 -1.5l-6 3v-13l6 -3l6 3l6 -3v7.5" />
+                <path d="M9 4v13" />
+                <path d="M15 7v5.5" />
+                <path d="M21.121 20.121a3 3 0 1 0 -4.242 0c.418 .419 1.125 1.045 2.121 1.879c1.051 -.89 1.759 -1.516 2.121 -1.879z" />
+                <path d="M19 18v.01" />
+                </svg>
+                    Lisbon, Portugal
+                </p>
+        </div> 
+    </main>   
+</section>
+<!-- Galeria de imagenes -->
+<div class="body-galeria">
+    <div class="parrafo-galeria">
+        <h2>Experience the charm of Lisbon 
+            <span>Find your way to discover the city.</span>
+        </h2>
+    </div>
+    <div class="galeria">
+            <div class="imagen" >
+                <a href="servicios.html#suggestion" target="_blank">
+                    <img src="img/seccion paseos/Belem(1080x1350).jpg" alt="Imagen 1">
+                </a>
+             <div class="wrap-text__imagen">
+                    <h2>Walking, Tapas & Tuk</h2>
+            </div>
+                <div class="info-wrap__imagen">
+                    <P><span>OUR SUGGESTION:</span> Walking tour through Baixa (city center) and Alfama + Portuguese gastronomy tasting + tuk tuk ride to the west (Belém) has shown to be an excellent way to start your journey. (5 hours)</P>
+                        <a href="servicios.html#suggestion" target="_blank" class="precio__imagen">
+                            <span>view</span>
+                            <span class="precio-gde">more</span>
+                        </a>
+                        <!-- <div class="reservar__imagen">Quiero Resservar</div> -->
+                </div>
+            </div>
+        <!-- <button class="ver-mas">Ver más</button> -->
+        <div class="imagen">
+            <a href="servicios.html#tuktuk" target="_blank">
+                 <img src="img/seccion paseos/padraodescobrementos(1080x1350).jpg" alt="Imagen 1">
+            </a>     
+            <div class="wrap-text__imagen">
+                <h2>Tuk Tuk</h2>
+            </div>
+            <div class="info-wrap__imagen">
+                <P><span>Tuk Tuk tours: Lisbon's best sights, no hassle.</span> Belém Tower, Monument to the Discoveries, Empire Square, Jerónimos Monastery, Church of Santa Maria de Belém, Belém Pastries</P>
+                <a href="servicios.html#tuktuk" target="_blank" class="precio__imagen">
+                    <span>view</span>
+                        <span class="precio-gde">more</span>
+                </a>
+                    <!-- <div class="reservar__imagen">Quiero Resservar</div> -->
+            </div>
+        </div>
+    <!-- <button class="ver-mas">Ver más</button> -->
+                <div class="imagen">
+                <a href="servicios.html#walking" target="_blank">
+                    <img src="img/seccion paseos/Rossio Square.png" alt="Imagen 1">
+                </a>
+                <div class="wrap-text__imagen">
+                    <h2>Walking tour</h2>
+                </div>
+                <div class="info-wrap__imagen">
+                    <P>Rossio Square, Augusta Street, Cathedral, Santa Luzia view point, Doors of the Sun view point, Alfama, Terreiro do Paço, Commerce Sq, Bairro Alto. <span>Walk through Lisbon, tours for up to 8 people.</span></P>
+                    <a href="servicios.html#walking" target="_blank" class="precio__imagen">
+                        <span>view</span>
+                            <span class="precio-gde">more</span>
+                    </a>
+                        <!-- <div class="reservar__imagen">Quiero Resservar</div> -->
+                </div>
+            </div>
+        <!-- <button class="ver-mas">Ver más</button> -->
+        <div class="imagen">
+            <a href="servicios.html#bike" target="_blank">
+                <img src="img/jeronimosindex.jpg" alt="Imagen 1">
+            </a>
+            <div class="wrap-text__imagen">
+                <h2>Bike tour to Belém</h2>
+            </div>
+            <div class="info-wrap__imagen">
+                <P><span></span>Garden of the Tower, Tagus River, the 25 de Abril Bridge and the King Christ. Tours for up to 8 people.</P>
+                <a href="servicios.html#bike" target="_blank" class="precio__imagen">
+                    <span>view</span>
+                        <span class="precio-gde">more</span>
+                </a>
+                    <!-- <div class="reservar__imagen">Quiero Resservar</div> -->
+            </div>
+        </div>
+        <!-- <button class="ver-mas">Ver más</button> -->
+    </div>
+<!-- fin -Galeria de imagenes -->
+
+<!-- Seccion servicios -->
+<section class="container-servicios">
+    <h2 class="heading">Explore the capital of the Portuguese as you like</h2>
+    <div class="box-container">
+        <div class="box-servicios ">
+            <img src="/img/seccion servicios/tuk-tuk 2.png" alt="">
+            <h3>Tuk Tours</h3>
+            <p>Experience the history of Lisbon with our Tuk Tuk tours. Tours available for up to 4 people.</p>
+            <div class="servicios__information">
+                <div>
+                    <p>
+                    <i class="fa-regular fa-clock"></i>
+                        Duration 1-4hr</p>
+                </div>
+                <div>
+                    <p>
+                    <i class="fa-solid fa-people-group"></i>
+                    Group of up to 4
+                    </p>
+                </div>
+            </div>
+            <a href="servicios.html#tuktuk" class="boton" target="_blank">Start Now</a>
+        </div>
+        <div class="box-servicios">
+            <img src="/img/seccion servicios/bicicleta 2.png" alt="">
+            <h3>Bike Tours</h3>
+            <p>Embark on magical scenic tours of Lisbon. Tours available for up to 8 people.</p>
+            <div class="servicios__information">
+                <div>
+                    <p>
+                    <i class="fa-regular fa-clock"></i>
+                    Duration 02:30hr</p>
+                </div>
+                <div>
+                    <p>
+                    <i class="fa-solid fa-people-group"></i>
+                    Group of up to 8
+                    </p>
+                </div>
+            </div>
+            <a href="servicios.html#bike" class="boton" target="_blank">Start Now</a>
+        </div>
+        <div class="box-servicios">
+            <img src="/img/seccion servicios/para-caminar2.png" alt="">
+            <h3>Walking Tours</h3>
+            <p>Discover Lisbon on foot, exploring every detail. From group or individual walking tours.</p>
+            <div class="servicios__information">
+                <div>
+                    <p>
+                    <i class="fa-regular fa-clock"></i>
+                    Duration 01:30-4hr</p>
+                </div>
+                <div>
+                    <p>
+                    <i class="fa-solid fa-people-group"></i>
+                    Group of up to 8
+                    </p>
+                </div>
+            </div>
+            <a href="servicios.html#walking" class="boton" target="_blank">Start Now</a>
+        </div>
+    </div>
+</section>
+
+<!-- SLIDER P PRESENTACION -->
+<div class="body-scroll">
+    <div class="parrafo">
+        <h2> Do you have a special request in Portugal? <span>Let us know! </span>
+        </h2>
+        <p>Experience Lisbon your way with our customized packages, including Tuk Tuk, bike and walking tours, as well as van tours, boat tours, helicopter, train and more. Contact us to create something special just for you. </p>
+        <a href="https://wa.me/c/351933848910" class="boton" target="_blank ">Custom Ride</a>
+    </div>
+    <div class="contenedor-slider">
+
+        <input type="radio" id="1" name="imag-slide" hidden>
+        <input type="radio" id="2" name="imag-slide" hidden>
+        <input type="radio" id="3" name="imag-slide" hidden>
+        <input type="radio" id="4" name="imag-slide" hidden>
+        <input type="radio" id="5" name="imag-slide" hidden>
+
+        <div class="slide">
+            <div class="item-slide">
+                <img src="img/foto (2).jpeg">
+            </div>
+
+            <div class="item-slide">
+                <img src="img/Sin título-3.png">
+            </div>
+
+            <div class="item-slide">
+                <img src="img/foto (14).jpeg">
+            </div>
+
+            <div class="item-slide">
+                <img src="img/foto (5).jpeg">
+            </div>
+
+            <div class="item-slide">
+                <img src="img/foto (9).jpeg">
+            </div>
+        </div>
+
+        <div class="pagination">
+            <label class="pagination-item" for="1">
+                <img src="img/foto (2).jpeg">
+            </label>
+
+            <label class="pagination-item" for="2">
+                <img src="img/Sin título-3.png">
+            </label>
+
+            <label class="pagination-item" for="3">
+                <img src="img/foto (14).jpeg">
+            </label>
+
+            <label class="pagination-item" for="4">
+                <img src="img/foto (5).jpeg">
+            </label>
+
+            <label class="pagination-item" for="5">
+                <img src="img/foto (9).jpeg">
+            </label>
+        </div>
+    </div>
+</div>
+
+<section class="testimonios__container">
+    <section class="container-testimonial">
+            <div class="tittle__testimonios">
+                <h2> Get inspired <span> Real people, real experiences</span> </h2>
+            </div>
+            <div class="testimonial" id="testimonial">
+
+              
+
+
+                <div class="slide-testimonial ">
+                    <div class="testimonio">
+                        <img src="img/james.png" alt="" class="testimonio__img">
+                        <div class="testimonio__text testimonio__support "> 
+                            <i class="fa fa-quote-left " aria-hidden="true"></i>
+                            <p>The Tuk Tuk tour of Lisbon, as guided by Luciano, was one of the best tours we’ve ever taken — and we’ve taken plenty of tours in Europe, Australia, New Zealand, and the USA.
+                                <br>This is an excellent way to start your Lisbon experience. You determine what you want to see and how long you want the tour to last. Initially, we thought a 90-minute tour would be sufficient, but the more we saw, the longer we wanted the tour. We ended up going for 3 1/2 hours! Afterward, we had seen the majority of important Lisbon sites.                           
+                                                               
+                            </p> 
+                            <span class="hideText">
+                            <p>Luciano is the ideal tour guide. He’s a gentleman, for starters — he was always ready to help out my husband, who is experiencing mobility issues. Luciano is also warm, and friendly, has a good sense of humor, and is highly knowledgeable about history. I can’t imagine a better tour guide.
+                               <br>The streets of Alfama, from where our tour began and ended, are cobblestone and filled with potholes, and as in any Tuk Tuk, you will likely feel every bump. Also, I suspect you can find less expensive Tuk Tuk tours — but I doubt you’d find a more satisfying, memorable one!                               
+                               <br>I rarely rate anything five stars, but in the case of Tagus Tours and Luciano, I’m happy to give the maximum star rating.</p></span>
+                               <i class="fa fa-quote-right" aria-hidden="true"></i> 
+                               <button class="boton read-more-btn contenedor-readmore">Read More</button>
+                             
+                            
+                        </div>  
+                        
+                        
+                        
+                        <div class="alinear-derecha view-google view-tripadvisor">
+                            <img src="/img/Tripadvisor.png" alt="">                       
+                            <a href="https://www.tripadvisor.com/ShowUserReviews-g189158-d13150197-r857310311-Tejo_Tours-Lisbon_Lisbon_District_Central_Portugal.html" target="_blank">View on Tripadvisor</a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                    <div class="slide-testimonial">
+                        <div class="testimonio">
+                            <img src="img/chiara.png" alt="" class="testimonio__img">
+                            <div class="testimonio__text"> 
+                                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                                <p>Damián was an incredible guide! We learned so much about the history is Lisboa as he explained landmarks while riding the tuk-tuk, as well as in certain places where he stopped for us to get off and look around. So friendly and an overall really enjoyable and well-rounded trip. A great way to get a look and feel for the city! Completely recommend!</p>
+                                <i class="fa fa-quote-right" aria-hidden="true"></i>
+                            </div>
+                            <div class="alinear-derecha view-google">
+                                <img src="/img/google.png" alt="">                       
+                                <a href="https://g.co/kgs/EdK9Me7" target="_blank">View on Google</a>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="slide-testimonial">
+                        <div class="testimonio">
+                            <img src="img/BEÑAT.png" alt="" class="testimonio__img">
+                            <div class="testimonio__text"> 
+                                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                                <p>Muy buen tour, Damian el que nos ha llevado ha sido muy amable en todo momento. Nos ha ayudado en todo y nos ha dado buenas recomendaciones. Muy recomendable.</p>
+                                <i class="fa fa-quote-right" aria-hidden="true"></i>
+                            </div>
+                            <div class="alinear-derecha view-google">
+                                <img src="/img/google.png" alt="">                       
+                                <a href="https://g.co/kgs/dtps8LA" target="_blank">View on Google</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide-testimonial">
+                        <div class="testimonio">
+                            <img src="img/ellen.png" alt="" class="testimonio__img">
+                            <div class="testimonio__text"> 
+                                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                                <p>Damian is very nice and showed us wonderful views of Lisbon</p>
+                                <i class="fa fa-quote-right" aria-hidden="true"></i>
+                            </div>
+                            <div class="alinear-derecha view-google">
+                                <img src="/img/google.png" alt="">                       
+                                <a href="https://g.co/kgs/7ehHuU" target="_blank">View on Google</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide-testimonial">
+                        <div class="testimonio">
+                            <img src="img/alexandra.png" alt="" class="testimonio__img">
+                            <div class="testimonio__text"> 
+                                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                                <p>"Encantador, apasionado, la mejor manera de visitar Lisboa"</p>
+                                <i class="fa fa-quote-right" aria-hidden="true"></i>
+                            </div>
+                            <div class="alinear-derecha view-google">
+                                <img src="/img/google.png" alt="">                       
+                                <a href="https://g.co/kgs/oHGacJ" target="_blank">View on Google</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="slide-testimonial">
+                        <div class="testimonio">
+                            <img src="img/eva.png" alt="" class="testimonio__img">
+                            <div class="testimonio__text"> 
+                                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                                <p>Maravilloso paseo,</p>
+                                <i class="fa fa-quote-right" aria-hidden="true"></i>
+                            </div>
+                            <div class="alinear-derecha view-google">
+                                <img src="/img/google.png" alt="">                       
+                                <a href="https://g.co/kgs/pQEFdA" target="_blank">View on Google</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slide-testimonial">
+                        <div class="testimonio">
+                            <img src="img/elena.png" alt="" class="testimonio__img">
+                            <div class="testimonio__text"> 
+                                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                                <p>Damián muy amable nos dio un tour muy bonito y cómodo. Repetiremos. Gracias</p>
+                                <i class="fa fa-quote-right" aria-hidden="true"></i>
+                            </div>   
+                            <div class="alinear-derecha view-google">
+                                <img src="/img/google.png" alt="">                       
+                                <a href="https://g.co/kgs/4xCeQA" target="_blank">View on Google</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="slide-testimonial">
+                        <div class="testimonio">
+                            <img src="img/alba.gif" alt="" class="testimonio__img">
+                            <div class="testimonio__text"> 
+                                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                                <p>El chico que conducia super agradable, cads poco para para hacer fotos y explicar los sitios, incluso tomar un chupito portugues.recomendablr para conocer lisboa si tienes poco tiempo y no quierea caminar</p>
+                                <i class="fa fa-quote-right" aria-hidden="true"></i>
+                            </div>   
+                            <div class="alinear-derecha view-google">
+                                <img src="/img/google.png" alt="">                       
+                                <a href="https://g.co/kgs/xVTbeV" target="_blank">View on Google</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="slide-testimonial">
+                        <div class="testimonio">
+                            <img src="img/celso.gif" alt="" class="testimonio__img">
+                            <div class="testimonio__text"> 
+                                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                                <p>Fantástico o Tour !!! Eu minha família só temos que agradecer foi uma experiência incrível lugares lindos . E a comunicação do Luciano explicações em todo passeio super recomendo. Obrigado Tagus  Tours</p>
+                                <i class="fa fa-quote-right" aria-hidden="true"></i>
+                            </div>   
+                            <div class="alinear-derecha view-google">
+                                <img src="/img/google.png" alt="">                       
+                                <a href="https://g.co/kgs/1Nkw22" target="_blank">View on Google</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="slide-testimonial">
+                        <div class="testimonio">
+                            <img src="img/ugo.gif" alt="" class="testimonio__img">
+                            <div class="testimonio__text"> 
+                                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                                <p>Super guide qui connait parfaitement les lieux et qui est tres interessant !
+                                    Nous avons passé une super apres midi. Le tour etait tres bien organisé et nous a permis d'apprendre l'histoire de Lisbonne!
+                                    Je recommande vivement !</p>
+                                <i class="fa fa-quote-right" aria-hidden="true"></i>
+                            </div>   
+                            <div class="alinear-derecha view-google">
+                                <img src="/img/google.png" alt="">                       
+                                <a href="https://g.co/kgs/f2Z8Vw" target="_blank">View on Google</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="slide-testimonial">
+                        <div class="testimonio">
+                            <img src="img/josep.gif" alt="" class="testimonio__img">
+                            <div class="testimonio__text"> 
+                                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                                <p>Un recorrido chulísimo con un conductor muy simpático y cercano. Muy recomendable
+                                </p>
+                                <i class="fa fa-quote-right" aria-hidden="true"></i>
+                            </div>   
+                            <div class="alinear-derecha view-google">
+                                <img src="/img/google.png" alt="">                       
+                                <a href="https://g.co/kgs/LmHL26" target="_blank">View on Google</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="slide-testimonial">
+                        <div class="testimonio">
+                            <img src="img/jana.gif" alt="" class="testimonio__img">
+                            <div class="testimonio__text"> 
+                                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                                <p>Damián nos ha hecho un tour excelente, con muy buenas explicaciones. Un trato muy amable.
+                                </p>
+                                <i class="fa fa-quote-right" aria-hidden="true"></i>
+                            </div>   
+                            <div class="alinear-derecha view-google">
+                                <img src="/img/google.png" alt="">                       
+                                <a href="https://g.co/kgs/5pAGM6" target="_blank">View on Google</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="slide-testimonial">
+                        <div class="testimonio">
+                            <img src="img/silvia.gif" alt="" class="testimonio__img">
+                            <div class="testimonio__text"> 
+                                <i class="fa fa-quote-left" aria-hidden="true"></i>
+                                <p>Excellent service an hour.  I had a 3 hour tour with Damian and was all o. Time and considerate to my needs, stopping for my needed morning coffee.  He was on time to pick up and arranged for other activities I wanted for the day..</p>
+                                <i class="fa fa-quote-right" aria-hidden="true"></i>
+                            </div>   
+                            <div class="alinear-derecha view-google">
+                                <img src="/img/google.png" alt="">                       
+                                <a href="https://g.co/kgs/M5nvpD" target="_blank">View on Google</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    
+
+                <div class="slider__btn slider__btn--rigth" id="btn-rigth">&#62</div>
+                <div class="slider__btn slider__btn--left"id="btn-left">&#60</div>
+
+            </div>
+
+    </section> 
+</section> 
+
+
+
+
+<div class="follow-instagram">
+        <h3>Follow us on Instagram</h3>
+        <a href="https://www.instagram.com/tagus_tours_lisbon/" target="_blank"> <i class="fab fa-instagram"></i> @tagus_tours_lisbon </a>
+</div>
+
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-row">
+            <div class="footer-links">
+                <h4>Tagus Tours</h4>
+                <li> <a class="active" href="index.html">Home</a></li>
+                <li> <a href="servicios.html">Tours</a></li>
+                <li> <a href="nosotros.html">About</a></li>
+                <li> <a href="contacto.html">Contact Us</a></li>
+            </div>
+            <div class="footer-links">
+                <h4>Experiences</h4>
+                <li> <a href="servicios.html#suggestion">Our Suggestion!</a></li>
+                <li> <a href="servicios.html#tuktuk" target="_blank">Tuk Tuk</a></li>
+                <li> <a href="servicios.html#bike" target="_blank">Bike</a></li>
+                <li> <a href="servicios.html#walking" target="_blank">Walking</a></li>
+                <!-- <li> <a href="#">Sintra</a></li> -->
+            </div>
+            <div class="footer-links">
+                <h4>Follows</h4>
+                <div class="social-link">
+                    <a href="https://www.facebook.com/tagustourslisbon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/tagus_tours_lisbon/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/351933848910" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <div class="footer-complaints-book">
+                    <h4>Complaints Book</h4>
+                    <div class="reclamos">
+                        <!-- <li> <a><i class="fab fa-facebook-f"></i></a> -->
+                       <a href="https://www.livroreclamacoes.pt/INICIO/" target="_blank">
+                        <img src="img/libro de reclamos blanco.png"  class="libro-reclamos">
+                       </a>
+                    </div>
+                </div>   
+            </div>          
+        </div>
+    </div>
+    <div class="derechos">
+        <p>All rights reserved. Tagus Tours Lisbon 2024</p>
+    </div>
+</footer>
+<!-- Scripts Presentation -->
+<script src="/JS/main.js"></script>
+<script src="/JS/script.js"></script>
+<script src="JS/testimonial.js"></script>
+
+
+
+</body>
+
+
+</html>

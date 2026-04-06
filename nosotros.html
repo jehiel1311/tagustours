@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tagus Tours | Explore Lisbon</title>
+    <link rel="icon" href="/img/Logo Icono2.ico">
+    <link rel="preload" href="Css/Normalize.css" as="style">
+    <link rel="stylesheet" href="Css/Normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Swiper Testimonios -->
+    <link rel="stylesheet" href="/Css/cdn.jsdelivr.net_npm_swiper@9.4.1_swiper-bundle.min.css">
+    <link rel="preload" href="Css/Styles.css" as="style">
+    <link rel="stylesheet" href="Css/Styles.css">
+           <!-- Otros elementos del head -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+            <!-- Footer Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+            <!--INSTAGRAM  -->
+    <link rel="stylesheet" type="text/css" href="Css/Styles.css">
+<!-- galeria de imagenes -->
+
+    <script async src="//www.instagram.com/embed.js"></script>        
+</head>
+
+    <header>
+  <!-- Botón de WhatsApp -->
+  <div class="whatsapp-container">
+    <div id="whatsappBtn" class="whatsapp-icon" onmouseover="mostrarGreeting()" onclick="mostrarDialogo()" onmouseout="ocultarGreeting()"></div>
+    <div class="whatsapp-greeting" id="greeting">Hello :)</div>
+</div>
+
+<div id="dialogo" class="mensaje__whatsapp dialogo hidden">
+    <div class="mensaje__whatsapp__globo">
+        <div class="mensaje__whatsapp__globo_1"></div>
+        <div class="mensaje__whatsapp__globo_2">
+            <h4>How may I assist you? </h4>
+        </div>
+    </div>
+    <a class="mensaje__whatsapp__x" onclick="cerrarDialogo()">x</a>
+    <div class="mensaje__whatsapp__dialogo">
+        <textarea id="mensaje" class="mensaje-input mensaje__whatsapp__chat" placeholder="Your messenger here"></textarea>
+        <button class="enviar-btn mensaje__whatsapp__enviar" onclick="enviarWhatsApp()"></button>
+    </div>
+    <div>
+        <img src="/img/fondo chat.png">
+    </div>
+</div>
+
+
+  <!--fin - Botón de WhatsApp -->
+
+
+      <div class="header-nav nav-mod__nosotros">
+        <div class="contenedor-nav">
+            <a href="index.html">
+                <img src="img/LOGO 02 Sin fondo copia.png" alt="Tagus Tour" class="logo">
+            </a>
+            <input type="checkbox" id="check">
+            <label for="check" class="bars__menu">
+               <span class="line1__bars-menu"></span>
+               <span class="line2__bars-menu"></span>
+                <span class="line3__bars-menu"></span> 
+           </label> 
+                 <ul class="nav-menu">
+                     <li><a href="index.html">Home</a></li>
+                     <li><a href="servicios.html">Tours</a></li>
+                     <li><a class="active" href="nosotros.html">About</a></li>
+                     <li><a href="contacto.html">Contact Us</a></li>
+                 </ul>      
+         </div>                 
+    </div>
+
+</header>
+   
+<div class="titulo__nosotros">
+    <img class="image__nosotros" src="/img/FONDONOSOTROSRU.jpg" alt="">
+    <p class="text__nosotros">About</p>
+    <div class="sombra"></div>
+</div>
+<div class="contenedor__nosotros dos-columnas">
+    <article class="entrada">
+        <h2>Who we are</h2>
+        <p>Tagus Tours Lisbon is an enterprise dedicated to promoting historical 
+        education and stimulating learning worldwide. <span> We believe that in order to 
+        live conscious and responsible lives in modern society, we must first 
+        become familiar with the history of humanity.</span> Tagus Tours Lisbon unites 
+        the adventure of tourism with the curiosity of learning to guide vast
+            varieties of people to their ideal place in society. </p>
+    </article>
+    <article class="entrada funder">
+        <h2>The founder</h2>
+        <p>The program’s founder, Luciano M. Rodrigues, began his work in the tourism 
+        industry in 2004. Since then, he has persisted in his search of finding ways to 
+        advance global education. <span> Luciano has lived in Lisbon since 2019 and recently 
+        completed his second graduate course, now in World History, at The Human and 
+        Social Science College at Universidade Nova de Lisbon. He plans to further his 
+        studies here by pursuing a masters degree in Historical Education.</span> Luciano’s experience 
+        of living in five different countries enables his extensive understanding in social
+            challenges such as cultural interchange, sustainability, and tolerance in the average 
+            lifestyle.</p>
+    </article>
+</div>
+
+<div class="body-scroll__nosotros">
+    <div class="parrafo__nosotros">
+        <h2>Revealing history, <span>embracing diversity</span></h2>
+        <p>At Tagus Tours Lisbon, we are dedicated to following in the footsteps of our adventurous ancestors.
+            It is our ambition to lead you through our history and present you with the unique perspectives of 
+            different cultures. Join us in seeing the world through our eyes. </p>
+    </div>
+    <div class="contenedor-slider__nosotros">
+
+        <input type="radio" id="1" name="imag-slide" hidden>
+        <input type="radio" id="2" name="imag-slide" hidden>
+        <input type="radio" id="3" name="imag-slide" hidden>
+        <input type="radio" id="4" name="imag-slide" hidden>
+        <input type="radio" id="5" name="imag-slide" hidden>
+
+        <div class="slide__nosotros">
+            <div class="item-slide">
+                <img src="img/seccion nosotros/nos1.png">
+            </div>
+
+            <div class="item-slide">
+                <img src="img/seccion nosotros/nos4.png">
+            </div>
+
+            <div class="item-slide">
+                <img src="img/seccion nosotros/nos2.png">
+            </div>
+
+            <div class="item-slide">
+                <img src="img/seccion nosotros/nos4.png">
+            </div>
+
+            <div class="item-slide">
+                <img src="img/seccion nosotros/nos3.png">
+            </div>
+        </div>
+    </div>   
+</div>
+
+
+<section class="contenedor__support">
+    <div class="tittle__support">
+        <h2>We Support</h2>
+    </div>
+    <div class="contenedor__article">
+        <article class="entrada__support">
+            <h3>Agenda 2030</h3>
+            <p>The United Nations Agenda 2030 is a global initiative aimed at addressing some 
+            of the world's most pressing challenges. Adopted by all UN Member States (193) in 2015, 
+            the 17 Sustainable Development Goals (SDGs) have 169 targets to be achieved by the year 
+            2030. The tourism industry, nowadays, is an important economic activity for many societies 
+            and responsible to provide income to millions of people around the globe.</p>
+            <span class="hideText">
+                <p>There are many reasons why supporting the UN Agenda 2030 is important. One of them is the interconnectedness
+                among them. Progress in one area often depends on progress in others. Reducing poverty (Goal 1) 
+                can be closely linked to improving education (Goal 4) and promoting gender equality 
+                (Goal 5). Economic prosperity, achieving the SDGs can also create economic opportunities,
+                many of the goals, such as those related to clean energy (Goal 7) and sustainable cities
+                (Goal 11), can stimulate economic growth and job creation. It's important to note that
+                while the 2030 Agenda provides a comprehensive framework, the specific strategies and 
+                actions to achieve these goals can vary from country to country based on their unique 
+                circumstances and priorities. Supporting the 2030 Agenda is not just a matter of governments;
+                Individuals, businesses, and civil society organizations can also contribute to its realization 
+                through their actions and initiatives. We at Tagus Tours are closely committed to Goal 4 
+                – Quality Education; Goal 7 – Affordable and Clean Energy; Goal 8 – Decent Work and Economic 
+                Growth; Goal 11 – Sustainable cities and communities; and Goal 16 – Peace, Justice and Strong 
+                Institutions.</p>
+            </span>
+            <button class="boton read-more-btn">Read More</button>
+        </article>
+        <article class="entrada__support">
+            <h3>Human Rights</h3>
+            <p>Human rights are fundamental to the well-being, dignity, and equality of every individual 
+            in society. They are closely linked to social and economic development. Access to education, 
+            healthcare, clean water, and economic opportunities are all considered human rights.</p>
+            <span class= "hideText">
+                <p>Ensuring these rights can lead to improved living standards and overall development. We believe that they 
+                are essential because they form the foundation of a just, equitable, and humane society. 
+                Upholding human rights is not just a moral imperative it´s a fundamental aspect of building 
+                a better world for all.</p>
+            </span>
+        <button class="boton read-more-btn">Read More</button>
+        </article>
+        <article class="entrada__support">
+            <h3>Lifelong learning</h3>
+            <p>It is the process of acquiring knowledge, skills, and competencies throughout one´s life.
+            It is a fundamental concept in today´s rapidly changing world, and its importance cannot 
+            be neglected. Lifelong learning is essential for personal growth, career success, adaptability, 
+            and contributing to this fast-paced changing world. It is a mindset that fosters curiosity, 
+            resilience, and a continuous pursuit of knowledge and self-improvement. </p>
+            <span class="hideText">
+            <p>Embracing lifelong learning can lead to a more fulfilling and meaningful life. Travelling, getting to know places, tastes, 
+            habits, people, is the best way to learn and improve our experience on Earth. We can help you 
+            achieve that in an enjoyable, pleasant way. Remember: embracing lifelong learning can lead to a 
+            more fulfilling and meaningful life.</p>
+            </span>
+        <button class="boton read-more-btn">Read More</button>
+        </article>
+        <article class="entrada__support">
+            <h3>Historical knowledge</h3>
+            <p>History provides insights into the events, people, and societies that have shaped the 
+            world as we know it today. Studying historical events and their consequences can help individuals 
+            and societies avoid making the same mistakes in the future. </p>
+            <span class="hideText">
+            <ul class="centrar__list">
+                <li>It helps us understand how and why things have developed and changed over time.</li>
+                <li>It helps us appreciate and understand different cultures, traditions, and belief systems.</li>
+                <li>It promotes tolerance and empathy by showing how diverse societies have contributed to human progress.</li>
+                <li>Analyzing historical events requires critical thinking and the ability to evaluate sources of information.</li>
+                <li>A knowledge of history is essential for informed citizenship. 
+                </li>
+                <li>It allows individuals to understand the political, social, and economic forces that shape their society.</li>
+                <li>It allows us to engage in meaningful discussions about public issues.</li>
+                <li>It helps preserve a society´s heritage and identity.</li>
+                <li>It allows people to connect with their roots and appreciate the contributions of past generations.</li>
+                <li>Historical figures who have overcome adversity or achieved great feats can serve as source of inspiration and role models for individuals seeking to make a positive impact on the world.</li>
+                <li>Understanding historical context is crucial for making sense of current events.</li>
+                <li>Many contemporary issues and conflicts have deep historical roots that can only be understood by studying the past.</li>
+                <li>Historical knowledge can also inform personal decisions. By understanding the consequences of past choices, individuals can make more informed decisions in their own lives.</li>
+                <li>History shows us how far humanity has come in terms of technology, science, medicine, and social progress.</li>
+                <li>It can foster a sense of appreciation for the advancements made over time.</li>
+                <li>History is a valuable tool for personal growth, civic engagement, and the preservation of cultural heritage.</li>
+            </ul>
+            </span>
+        <button class="boton read-more-btn">Read More</button>       
+        </article>
+        <article class="entrada__support">
+            <h3>Diversity</h3>
+            <p>Its significance extends to various aspects of society, including workplaces, communities, 
+            and educational institutions. It brings together individuals with different backgrounds, 
+            perspectives, and experiences. The diversity of thought can lead to greater innovation and 
+            creativity. It leads to more informed and balanced decision-making. </p>
+            <span class="hideText">
+                <p>In a globalized world, diversity is essential for understanding and serving diverse customer bases. It is an important aspect of promoting 
+                fairness and equity in society. Exposure to diverse cultures and perspectives can enrich people´s lives, 
+                broaden their horizons, and deepen their understanding of the world. Embracing diversity is not only an 
+                ethical choice but also a legal requirement in many places. It is a strategic advantage in several contexts.</p>
+            </span>
+            <button class="boton read-more-btn">Read More</button>
+        </article>
+        <article class="entrada__support">
+            <h3>Inclusiveness</h3>
+            <p>It´s a concept that stands for the practice of ensuring that all individuals and groups, 
+                regardless of their background, identity, abilities, or characteristics, are given fair 
+                and equal opportunities to participate, be heard, and feel valued in a particular setting 
+                or society. It is about creating an environment where diversity is not only accepted but 
+                also embraced, and where everyone feels they belong and can contribute. It can apply to 
+                education, employment, social interactions, and public policy. It aims to promote equity, 
+                diversity, and social cohesion. </p> 
+                
+                <span class="hideText">
+                    <p>The principles of inclusiveness often involve:
+                        <ul class="centrar__list">
+                            <li>Equal access to opportunities and resources to everyone</li>
+                            <li>Respect for differences, the unique qualities and perspectives of each person</li>
+                            <li>Removing barriers by identifying and eliminating obstacles that prevent some people or groups from fully participating</li>
+                            <li>Promoting diversity when encouraging a variety of voices, perspectives, and experiences to contribute to a richer and more well-rounded society</li>
+                            <li>Creating safe spaces establishing environments where people can express themselves without fear of discrimination or prejudice</li>
+                            <li>Equity: different individuals may require different levels of support to achieve equal outcomes.</li>
+                        </ul> 
+                Inclusiveness is often seen as a fundamental aspect of social justice and human rights, and it is promoted in 
+                many contexts, including education, workplaces, governments, and communities as a way to 
+                build more equitable and harmonious societies.</p>   
+        </span>    
+        <button class="boton read-more-btn">Read More</button>
+        </article>
+        <article class="entrada__support">
+            <h3>Global citizenship education</h3>
+            <p>This is an approach to learning that aims to foster knowledge, skills, attitudes, 
+            and values that empower individuals to engage with and address global challenges. 
+            It goes beyond traditional academic subjects to promote a holistic understanding of the 
+            world and one´s role in it.</p>
+            <span class="hideText">
+                <p>Some key aspects of global citizen education are:
+                    <ul class="centrar__list">
+                        <li>Awareness of global issues.</li>
+                        <li>Environmental sustainability.</li>
+                        <li>Cultural sensitivity.</li>
+                        <li>Social justice and human rights.</li>
+                        <li>Critical thinking and problem solving.</li>
+                        <li>Active citizenship.</li>
+                        <li>Intercultural communication.</li>
+                        <li>Ethical leadership.</li>
+                        <li>Global perspective.</li>
+                        <li>Education for sustainable development.</li>
+                        <li>Global citizen education can take various forms, including formal education in schools, universities, and online courses, as well as informal learning through community organization, travel, and personal experience. The goal is to prepare individuals to be informed, responsible, and active participants in a rapidly changing and interconnected world.</li>
+                    </ul>
+                </p>
+            </span>         
+        <button class="boton read-more-btn">Read More</button>
+        </article>
+        <article class="entrada__support">
+            <h3>Responsible tourism</h3>
+            <p>Also known as sustainable tourism or eco-tourism, responsible tourism is an approach to travel and tourism 
+            that seeks to maximize the positive impact of tourism on destinations while minimizing its negative effects. 
+            It is a holistic concept that takes into consideration the economic, social, and environmental aspects of tourism. 
+            Sustainable tourism aims to protect natural resources and minimize the environmental impact of tourism activities. 
+            This includes efforts to reduce pollution, conserve energy and water, and preserve biodiversity. 
+            It seeks to respect and support local cultures and communities. This involves promoting cultural awareness and respect, as well as engaging with and benefiting the local population through tourism-related activities.</p>
+            <span class="hideText">
+                <p>It should contribute to the economic well-being of local communities and promote fair economic practices. 
+                It often involves creating economic opportunities for local businesses and people. Educating tourists about 
+                the importance of responsible behavior and environmental conservation is a key aspect of sustainable tourism. 
+                This helps raise awareness and encourages tourists to make environmentally and culturally responsible choices. 
+                Engaging local communities in decision-making processes related to tourism is important. Their input can help 
+                shape tourism policies and initiatives that benefit everyone. 
+                Sustainable tourism emphasizes the preservation of natural and cultural heritage sites, ensuring that they remain 
+                intact for future generations to enjoy. Managing visitor numbers and promoting off-peak travel can help reduce the 
+                negative impacts of overcrowding in popular tourist destinations.
+                Implementing sustainable practices, such as waste reduction and responsible resource management, is crucial to reducing 
+                the environmental footprint of tourism. 
+                Sustainable tourism often involves responsible infrastructure development that supports both tourists and local communities 
+                without causing harm to the environment. 
+                It looks beyond short-term gains and focuses on long-term benefits for both tourists and host communities.  
+                Sustainable tourism is essential for ensuring that the tourism industry can continue to thrive without degrading the natural 
+                and cultural assets that attract travelers in the first place. It´s a proactive approach to balance the economic benefits of 
+                tourism with the need to protect the environment and respect local cultures. Many destinations around the world have adopted 
+                sustainable tourism practices to promote responsible travel and preserve their unique attractions.                    
+                </p>
+            </span>         
+        <button class="boton read-more-btn">Read More</button>
+        </article>
+
+
+</section>
+
+
+
+<section class="section__idioma">
+    <h1>Tours in your language</h1>
+    <div class="elemento__idioma">
+        <img src="img/reino-unido.png" alt="">
+        <img src="img/espana.png" alt="">
+        <img src="img/portugal.png" alt="">
+    </div>
+</section>   
+<div class="follow-instagram">
+        <h3>Follow us on Instagram</h3>
+        <a href="https://www.instagram.com/tagus_tours_lisbon/"> <i class="fab fa-instagram"></i> @tagus_tours_lisbon </a>
+</div>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-row">
+            <div class="footer-links">
+                <h4>Tagus Tours</h4>
+                <li> <a class="active" href="index.html">Home</a></li>
+                <li> <a href="servicios.html">Tours</a></li>
+                <li> <a href="nosotros.html">About</a></li>
+                <li> <a href="contacto.html">Contact Us</a></li>
+            </div>
+            <div class="footer-links">
+                <h4>Experiences</h4>
+                <li> <a href="servicios.html#suggestion">Our Suggestion!</a></li>
+                <li> <a href="servicios.html#tuktuk" target="_blank">Tuk Tuk</a></li>
+                <li> <a href="servicios.html#bike" target="_blank">Bike</a></li>
+                <li> <a href="servicios.html#walking" target="_blank">Walking</a></li>
+                <!-- <li> <a href="#">Sintra</a></li> -->
+            </div>
+            <div class="footer-links">
+                <h4>Follows</h4>
+                <div class="social-link">
+                    <a href="https://www.facebook.com/tagustourslisbon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/tagus_tours_lisbon/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/351933848910" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <div class="footer-complaints-book">
+                    <h4>Complaints Book</h4>
+                    <div class="reclamos">
+                        <!-- <li> <a><i class="fab fa-facebook-f"></i></a> -->
+                       <a href="https://www.livroreclamacoes.pt/INICIO/" target="_blank">
+                        <img src="img/libro de reclamos blanco.png"  class="libro-reclamos">
+                       </a>
+                    </div>
+                </div>   
+            </div>          
+        </div>
+    </div>
+    <div class="derechos">
+        <p>All rights reserved. Tagus Tours Lisbon 2024</p>
+    </div>
+</footer>
+
+<!-- <script src="/JS/script.js" src="/JS/support.js"></script> -->
+<script src="/JS/support.js "></script>
+<script src="/JS/script.js "></script>
+
+</body>
+
+
+</html>

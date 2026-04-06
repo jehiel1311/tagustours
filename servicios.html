@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tagus Tours | Explore Lisbon</title>
+    <link rel="icon" href="/img/Logo Icono2.ico">
+    <link rel="preload" href="Css/Normalize.css" as="style">
+    <link rel="stylesheet" href="Css/Normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Swiper Testimonios -->
+    <link rel="stylesheet" href="/Css/cdn.jsdelivr.net_npm_swiper@9.4.1_swiper-bundle.min.css">
+    <link rel="preload" href="Css/Styles.css" as="style">
+    <link rel="stylesheet" href="Css/Styles.css">
+           <!-- Otros elementos del head -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+            <!-- Footer Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous"> -->
+    <link rel="stylesheet" type="text/css" href="Css/Styles.css">
+<!-- galeria de imagenes -->
+
+
+    <script async src="//www.instagram.com/embed.js"></script>        
+</head>
+<header>
+  <!-- Botón de WhatsApp -->
+  <div class="whatsapp-container">
+    <div id="whatsappBtn" class="whatsapp-icon" onmouseover="mostrarGreeting()" onclick="mostrarDialogo()" onmouseout="ocultarGreeting()"></div>
+    <div class="whatsapp-greeting" id="greeting">Hello :)</div>
+</div>
+
+<div id="dialogo" class="mensaje__whatsapp dialogo hidden">
+    <div class="mensaje__whatsapp__globo">
+        <div class="mensaje__whatsapp__globo_1"></div>
+        <div class="mensaje__whatsapp__globo_2">
+            <h4>How may I assist you? </h4>
+        </div>
+    </div>
+    <a class="mensaje__whatsapp__x" onclick="cerrarDialogo()">x</a>
+    <div class="mensaje__whatsapp__dialogo">
+        <textarea id="mensaje" class="mensaje-input mensaje__whatsapp__chat" placeholder="Your messenger here"></textarea>
+        <button class="enviar-btn mensaje__whatsapp__enviar" onclick="enviarWhatsApp()"></button>
+    </div>
+    <div>
+        <img src="/img/fondo chat.png">
+    </div>
+</div>
+
+
+  <!--fin - Botón de WhatsApp -->
+
+      <div class="header-nav nav-mod__nosotros">
+        <div class="contenedor-nav">
+            <a href="index.html">
+                <img src="img/LOGO 02 Sin fondo copia.png" alt="Tagus Tour" class="logo">
+            </a>
+            <input type="checkbox" id="check">
+            <label for="check" class="bars__menu">
+               <span class="line1__bars-menu"></span>
+               <span class="line2__bars-menu"></span>
+                <span class="line3__bars-menu"></span> 
+           </label> 
+                 <ul class="nav-menu">
+                     <li><a href="index.html">Home</a></li>
+                     <li><a class="active" href="servicios.html">Tours</a></li>
+                     <li><a href="nosotros.html">About</a></li>
+                     <li><a href="contacto.html">Contact Us</a></li>
+                 </ul>      
+         </div>                 
+    </div>
+</header>
+<section class="seccion-tours">
+    <section class="container__seccion-tours">
+        <div class="tittle__servicios">
+            <h1 id="suggestion">Experience Baixa, Alfama, Belém and Portuguese Gastronomy</h1>
+        </div>
+        <main class="main__servicios">
+                <div class="bgImage__servicios"><div class="overlay"></div></div>
+                <div class="tittle__tour"> 
+                    <h2>Walk, Tapas & Tuk</h2>
+                </div>
+                <div class="container__social">
+                    <h4>Share</h4>
+                    <div class="social-link btn-tours">
+                        <a href="http://www.facebook.com/sharer.php?u=https://tagustours.pt/servicios.html#suggestion" class="share__facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="mailto:?subject=Take a look at this website!&body=Select a tour https://www.tagustours.pt/servicios" class="share__instagram" target="_blank"><i class="fa fa-envelope"></i></a>
+                        <a href="https://api.whatsapp.com/send?text=http://dtagustours.pt/servicios.html#suggestion" target="_blank" class="share__whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+        </main>
+
+        <section class="container__info">
+                <div class="products__info mySwiper">
+                    <div class="contenedor-ind__products swiper-wrapper">
+                        <div class="slide__products swiper-slide">
+                            <div class="text-precio">
+                                <div><p><i class="fa-solid fa-people-group"></i> 4 Pax</p></div>
+                                <div><p><i class="fa-solid fa-money-check"></i> €320 (Per person €80)</p></div>
+                            </div>
+                            <div class="cont__btn-center">
+                            <a href="https://wa.me/p/7074333292576770/351933848910" class="boton btn-center" target="_blank">Book Now</a>
+                            </div>
+                        </div>
+
+                        <div class="slide__products swiper-slide">        
+                            <div class="text-precio">
+                                <div><p><i class="fa-solid fa-people-group"></i> 3 Pax</p></div>
+                                <div><p><i class="fa-solid fa-money-check"></i> €295 (Per person €98.3)</p></div>
+                            </div>
+                            <div class="cont__btn-center">
+                            <a href="https://wa.me/p/6841053865907567/351933848910" class="boton btn-center" target="_blank">Book Now</a>
+                            </div>
+                        </div>
+
+                        <div class="slide__products swiper-slide">
+                            <div class="precio__servicios">
+                                <!-- <p> per person <span> €125 </span></p> -->
+                            </div> 
+                            <div class="text-precio">
+                                <div><p><i class="fa-solid fa-people-group"></i> 2 Pax</p></div>
+                                <div><p><i class="fa-solid fa-money-check"></i> €270 (Per person €135)</p></div>
+                            </div>
+                            <div class="cont__btn-center">
+                            <a href="https://wa.me/p/6361293000657468/351933848910" class="boton btn-center" target="_blank">Book Now</a>
+                            </div> 
+                        </div>
+                        <div class="slide__products swiper-slide">                      
+                            <div class="text-precio">
+                                <div><p><i class="fa-solid fa-people-group"></i> 1 Pax</p></div>
+                                <div><p><i class="fa-solid fa-money-check"></i> €245</p></div>
+                            </div>
+                            <div class="cont__btn-center">
+                            <a href="https://wa.me/p/6412216352147462/351933848910" class="boton btn-center" target="_blank">Book Now</a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="swiper-button-next slider-btn"></div>
+                    <div class="swiper-button-prev slider-btn"></div>
+                    
+                    <div class="swiper-pagination"></div>
+                </div>
+        </section>
+        <section class="description-additional">
+            <div class="tittle__description-additional">
+                <h2>What you are<br><span> going to do</span></h2>
+            </div>
+            <div class="contenedor__description-additional" >
+                <div class="container-additional-information" >
+                    <div class="title-information-additional">
+                        <h4>Additional Information</h4>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="text-information-additional">
+                        <div><p><i class="fa fa-taxi"></i> Driver Guide</p></div>
+                        <div><p><i class="fa-regular fa-clock"></i> Duration 05:00hr</p></div>
+                        <div><p><i class="fa-solid fa-language"></i> Guides in English, Portuguese and Spanish.</p></div>                   
+                    </div>
+                </div> 
+                <div class="container-description">
+                    <div class="title-description hidden">
+                        <h4>Description</h4>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="text-description">
+                        <span><i class="fa-solid fa-person-walking"></i>
+                        Walking  - 02:00hr </span>
+                        <p>BAIXA - Rossio Square, Augusta St., Pombaline city center.
+                            ALFAMA – Saint Antonio de Lisboa church, Sé Cathedral, Saint Jorge Castle, Saint Luzia view point, Doors of the Sun view point, downstairs into Old Alfama square, Fado Museum, Jardim do Tabaco St., Chafariz d´El Rei, Infante D. Henrique Ave., Commerce Square, Ribeira das Naus St., Portuguese Navy, Loja das Conservas Delicacies.
+                        </p>
+                        <span><i class="fa-solid fa-utensils"></i>
+                            Tapas  - 01:00hr </span>
+                            <p> Corpo Santo – Loja das Conservas Petiscos
+                            <br>Menu:
+                            <br>Starters: <i>olives + codfish cake</i>
+                            <br>Main Course: <i>octopus salad or sardines à portuguesa or tuna pica pau</i>
+                            <br>Drinks: <i>2 glasses of wine or 2 beers 0,30cl + 1 bottle of water + 1 ginjinha/pax</i>
+                        </p>
+                        <span><i class="fa-solid fa-car-side"></i>
+                            Tuk  – 02:00hr </span>
+                            <p>Go West to BELÉM: 
+                            <br>Main attractions:  <i>Belém Tower, Monument to the Discoveries, Empire Square, Jerónimos Monastery Museum, Church of Santa Maria de Belém, Pastéis de Belém.</i>
+                           <br> Other attractions we see: <i>Belém Cultural Center, Navy Museum, Archeological Museum, Belém National Palace, Afonso de Albuquerque Square, Coches National Museum, Quake – Lisbon Earthquake museum, National Ropework factory, MAAT.</i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+</section>
+
+
+
+
+
+<section class="seccion-tours">       
+    <section class="container__seccion-tours">                   
+            <div class="tittle__servicios">
+                <h1 id="tuktuk">Tuk Tuk Tours</h1>
+            </div>
+            <main class="main__servicios">
+                    <div class="bgImage__servicios bg-tuk"><div class="overlay"></div></div>
+                    <div class="tittle__tour"> 
+                        <h2>Experience the history of Lisbon</h2>
+                    </div>
+                    <div class="container__social">
+                        <h4>Share</h4>
+                        <div class="social-link btn-tours">
+                            <a href="http://www.facebook.com/sharer.php?u=https://tagustours.pt/servicios.html#tuktuk" class="share__facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="mailto:?subject=Take a look at this website!&body=Select a tour https://www.tagustours.pt/servicios" class="share__instagram" target="_blank"><i class="fa fa-envelope"></i></a>
+                            <a href="https://api.whatsapp.com/send?text=http://tagustours.pt/servicios.html" target="_blank" class="share__whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+            </main>
+            <section class="container__info">
+                    <div class="products__info mySwiper">
+                        <div class="contenedor-ind__products swiper-wrapper">
+                        
+
+                            <div class="slide__products swiper-slide">
+                                <div class="precio__servicios">
+                                    <!-- <p> per person  -->
+                                    <span> €290 </span>
+                                </div> 
+                                <div class="text-precio">
+                                    <div><p><i class="fa-regular fa-clock"></i> Duration 04:00hr</p></div>
+                                    <!-- <div><p><i class="fa-solid fa-money-check"></i> €250 (Per person €125)</p></div> -->
+                                    <div><p><i class="fa-solid fa-people-group"></i> Up to 4 people</p></div>
+                                </div>
+                                <div class="cont__btn-center">
+                                <a href="https://wa.me/p/6186435424788125/351933848910" class="boton btn-center" target="_blank">Book Now</a>
+                                </div> 
+                                <section class="description-additional">
+                                    <div class="tittle__description-additional">
+                                        <h2>Tour the Portuguese capital <br><span>and learn about the fascinating history</span></h2>
+                                    </div>
+                                    <div class="contenedor__description-additional" >
+                                        <div class="container-additional-information" >
+                                            <div class="title-information-additional">
+                                                <h4>Additional Information</h4>
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </div>
+                                            <div class="text-information-additional">
+                                                <div><p><i class="fa-solid fa-language"></i> Guides in English, Portuguese and Spanish.</p></div>                   
+                                            </div>
+                                        </div> 
+                                        <div class="container-description">
+                                            <div class="title-description hidden">
+                                                <h4>Description</h4>
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </div>
+                                            <div class="text-description">
+                                                <span><i class="fa-solid fa-car-side"></i> Belem </span>
+                                                    <br><ul class="tours__walking">
+                                                        <li>Star Garden</li>
+                                                        <li>Belém Tower</li>
+                                                        <li>Monument to the Discoveries</li>
+                                                        <li>Empire Square</li>
+                                                        <li>Jerónimos Monastery</li>
+                                                        <li>Church of Santa Maria de Belém</li>
+                                                        <li>Belém Pastries</li>
+                                                        <br>
+                                                        <span><i class="fa-plus"></i> Lisbon Center
+                                                        <br><br> Old City
+                                                        </span> 
+                                                        
+                                                        <br>                                          
+                                                        <li>Sé Cathedral, Santa Luzia & Doors of the Sun Viewpoints, Lady of the Hill Viewpoint, Church of Saint Vincent, National Pantheon, Alfama, Commerce Square, Portuguese Navy, Ribeira das Naus.</li>
+                                                        <span><br>Old City II</span>  
+                                                            <br> 
+                                                        <li>Saint Peter of Alcântara viewpoint, Carmo Convent, Saint Justa, High Barrio, Chiado, Rossio Station, Liberdade Avenue, Marquês de Pombal Square, Edward VII Park</li>                                                              
+                                                    </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                            </div>
+
+                            <div class="slide__products swiper-slide">
+                                <div class="precio__servicios">
+                                    <!-- <p> per person  -->
+                                    <span> €240 </span>
+                                </div> 
+                                <div class="text-precio">
+                                    <div><p><i class="fa-regular fa-clock"></i> Duration 03:00hr</p></div>
+                                    <!-- <div><p><i class="fa-solid fa-money-check"></i> €250 (Per person €125)</p></div> -->
+                                    <div><p><i class="fa-solid fa-people-group"></i> Up to 4 people</p></div>
+                                </div>
+                                <div class="cont__btn-center">
+                                <a href="https://wa.me/p/6186435424788125/351933848910" class="boton btn-center" target="_blank">Book Now</a>
+                                </div> 
+                                <section class="description-additional">
+                                    <div class="tittle__description-additional">
+                                        <h2>Tour the Portuguese capital <br><span>and learn about the fascinating history</span></h2>
+                                    </div>
+                                    <div class="contenedor__description-additional" >
+                                        <div class="container-additional-information" >
+                                            <div class="title-information-additional">
+                                                <h4>Additional Information</h4>
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </div>
+                                            <div class="text-information-additional">
+                                                <div><p><i class="fa-solid fa-language"></i> Guides in English, Portuguese and Spanish.</p></div>                   
+                                            </div>
+                                        </div> 
+                                        <div class="container-description">
+                                            <div class="title-description hidden">
+                                                <h4>Description</h4>
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </div>
+                                            <div class="text-description">
+                                                <span><i class="fa-solid fa-car-side"></i> Belem</span>
+                                                    <br><ul class="tours__walking">
+                                                        <li>Star Garden</li>
+                                                        <li>Belém Tower</li>
+                                                        <li>Monument to the Discoveries</li>
+                                                        <li>Empire Square</li>
+                                                        <li>Jerónimos Monastery</li>
+                                                        <li>Church of Santa Maria de Belém</li>
+                                                        <li>Belém Pastries</li>
+                                                        <br>
+                                                        <span><i class="fa-plus"></i> Lisbon Center (options)
+                                                        <br><br> 1) Old City
+                                                        </span> 
+                                                        
+                                                        <br>                                          
+                                                        <li>Sé Cathedral, Santa Luzia & Doors of the Sun Viewpoints, Lady of the Hill Viewpoint, Church of Saint Vincent, National Pantheon, Alfama, Commerce Square, Portuguese Navy, Ribeira das Naus.</li>
+                                                        <br><span>Or</span>
+                                                        <span><br> 2) Old City II</span>  
+                                                            <br> 
+                                                        <li>Saint Peter of Alcântara viewpoint, Carmo Convent, Saint Justa, High Barrio, Chiado, Rossio Station, Liberdade Avenue, Marquês de Pombal Square, Edward VII Park</li>                                                              
+                                                    </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <p>
+                                
+                                </p>
+                            </div>
+
+                            <div class="slide__products swiper-slide">
+                                <div class="precio__servicios">
+                                    <!-- <p> per person  -->
+                                    <span> €200 </span>
+                                </div> 
+                                <div class="text-precio">
+                                    <div><p><i class="fa-regular fa-clock"></i> Duration 02:30hr</p></div>
+                                    <!-- <div><p><i class="fa-solid fa-money-check"></i> €250 (Per person €125)</p></div> -->
+                                    <div><p><i class="fa-solid fa-people-group"></i> Up to 4 people</p></div>
+                                </div>
+                                <div class="cont__btn-center">
+                                <a href="https://wa.me/p/6186435424788125/351933848910" class="boton btn-center" target="_blank">Book Now</a>
+                                </div> 
+                                <section class="description-additional">
+                                    <div class="tittle__description-additional">
+                                        <h2>Tour the Portuguese capital <br><span>and learn about the fascinating history</span></h2>
+                                    </div>
+                                    <div class="contenedor__description-additional" >
+                                        <div class="container-additional-information" >
+                                            <div class="title-information-additional">
+                                                <h4>Additional Information</h4>
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </div>
+                                            <div class="text-information-additional">
+                                                <div><p><i class="fa-solid fa-language"></i> Guides in English, Portuguese and Spanish.</p></div>                   
+                                            </div>
+                                        </div> 
+                                        <div class="container-description">
+                                            <div class="title-description hidden">
+                                                <h4>Description</h4>
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </div>
+                                            <div class="text-description">
+                                                <span><i class="fa-solid fa-car-side"></i> Lisbon Center</span>
+                                                    <br><ul class="tours__walking">
+
+                                                        <span>Old City
+                                                        </span>                                                  
+                                                        <br>                                          
+                                                        <li>Sé Cathedral, Santa Luzia & Doors of the Sun Viewpoints, Lady of the Hill Viewpoint, Church of Saint Vincent, National Pantheon, Alfama, Commerce Square, Portuguese Navy, Ribeira das Naus.</li>
+                                                        <span><br>Old City II</span>  
+                                                            <br> 
+                                                        <li>Saint Peter of Alcântara viewpoint, Carmo Convent, Saint Justa, High Barrio, Chiado, Rossio Station, Liberdade Avenue, Marquês de Pombal Square, Edward VII Park</li>                                                              
+                                                    </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <p>
+                                
+                                </p>
+                            </div>
+
+                            <div class="slide__products swiper-slide">
+                                <div class="precio__servicios">
+                                    <!-- <p> per person  -->
+                                    <span> €160 </span>
+                                </div> 
+                                <div class="text-precio">
+                                    <div><p><i class="fa-regular fa-clock"></i> Duration 02:00hr</p></div>
+                                    <!-- <div><p><i class="fa-solid fa-money-check"></i> €250 (Per person €125)</p></div> -->
+                                    <div><p><i class="fa-solid fa-people-group"></i> Up to 4 people</p></div>
+                                </div>
+                                <div class="cont__btn-center">
+                                <a href="https://wa.me/p/6186435424788125/351933848910" class="boton btn-center" target="_blank">Book Now</a>
+                                </div> 
+                                <section class="description-additional">
+                                    <div class="tittle__description-additional">
+                                        <h2>Tour the Portuguese capital <br><span>and learn about the fascinating history</span></h2>
+                                    </div>
+                                    <div class="contenedor__description-additional" >
+                                        <div class="container-additional-information" >
+                                            <div class="title-information-additional">
+                                                <h4>Additional Information</h4>
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </div>
+                                            <div class="text-information-additional">
+                                                <div><p><i class="fa-solid fa-language"></i> Guides in English, Portuguese and Spanish.</p></div>                   
+                                            </div>
+                                        </div> 
+                                        <div class="container-description">
+                                            <div class="title-description hidden">
+                                                <h4>Description</h4>
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </div>
+                                            <div class="text-description">
+                                                <span><i class="fa-solid fa-car-side"></i> Lisbon Center</span>
+                                                    <br><ul class="tours__walking">
+
+                                                        <span>Old City
+                                                        </span>                                                  
+                                                        <br>                                          
+                                                        <li>Sé Cathedral, Santa Luzia & Doors of the Sun Viewpoints, Lady of the Hill Viewpoint, Church of Saint Vincent, National Pantheon, Alfama, Commerce Square, Portuguese Navy, Ribeira das Naus.</li>
+                                                        <span><br>Old City II</span>  
+                                                            <br> 
+                                                        <li>Saint Peter of Alcântara viewpoint, Carmo Convent, Saint Justa, High Barrio, Chiado, Rossio Station, Liberdade Avenue, Marquês de Pombal Square.</li>                                                              
+                                                    </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <p>
+                                
+                                </p>
+                            </div>
+
+                            <div class="slide__products swiper-slide">
+                                <div class="precio__servicios">
+                                    <!-- <p> per person  -->
+                                    <span> €130 </span>
+                                </div> 
+                                <div class="text-precio">
+                                    <div><p><i class="fa-regular fa-clock"></i> Duration 01:30hr</p></div>
+                                    <!-- <div><p><i class="fa-solid fa-money-check"></i> €250 (Per person €125)</p></div> -->
+                                    <div><p><i class="fa-solid fa-people-group"></i> Up to 4 people</p></div>
+                                </div>
+                                <div class="cont__btn-center">
+                                <a href="https://wa.me/p/6186435424788125/351933848910" class="boton btn-center" target="_blank">Book Now</a>
+                                </div> 
+                                <section class="description-additional">
+                                    <div class="tittle__description-additional">
+                                        <h2>Tour the Portuguese capital <br><span>and learn about the fascinating history</span></h2>
+                                    </div>
+                                    <div class="contenedor__description-additional" >
+                                        <div class="container-additional-information" >
+                                            <div class="title-information-additional">
+                                                <h4>Additional Information</h4>
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </div>
+                                            <div class="text-information-additional">
+                                                <div><p><i class="fa-solid fa-language"></i> Guides in English, Portuguese and Spanish.</p></div>                   
+                                            </div>
+                                        </div> 
+                                        <div class="container-description">
+                                            <div class="title-description hidden">
+                                                <h4>Description</h4>
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </div>
+                                            <div class="text-description">
+                                                <span><i class="fa-solid fa-car-side"></i> Old City</span>
+                                                    <br><ul class="tours__walking">
+                                                            <li>Sé Cathedral, Santa Luzia & Doors of the Sun Viewpoints, Lady of the Hill Viewpoint, Church of Saint Vincent, National Pantheon, Alfama, Commerce Square, Portuguese Navy, Ribeira das Naus.</li>
+                                                            <br><span><i class="fa-plus"></i> Old City II (options)</span>                                                                                                                                              
+                                                            <br><span>Old City II</span>  
+                                                            <br><li>Saint Peter of Alcântara viewpoint, Carmo Convent, Saint Justa, High Barrio, Chiado. </li>
+                                                            <br><span>Or</span>
+                                                            <br> 
+                                                            <li>Rossio Station, Liberdade Avenue, Marquês de Pombal Square, Edward VII Park</li>                                                              
+                                                        </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <p>
+                                
+                                </p>
+                            </div>
+
+                            <div class="slide__products swiper-slide">
+                                <div class="precio__servicios">
+                                    <!-- <p> per person  -->
+                                    <span> €90 </span>
+                                </div> 
+                                <div class="text-precio">
+                                    <div><p><i class="fa-regular fa-clock"></i> Duration 01:00hr</p></div>
+                                    <!-- <div><p><i class="fa-solid fa-money-check"></i> €250 (Per person €125)</p></div> -->
+                                    <div><p><i class="fa-solid fa-people-group"></i> Up to 4 people</p></div>
+                                </div>
+                                <div class="cont__btn-center">
+                                <a href="https://wa.me/p/6186435424788125/351933848910" class="boton btn-center" target="_blank">Book Now</a>
+                                </div> 
+                                <section class="description-additional">
+                                    <div class="tittle__description-additional">
+                                        <h2>Tour the Portuguese capital <br><span>and learn about the fascinating history</span></h2>
+                                    </div>
+                                    <div class="contenedor__description-additional" >
+                                        <div class="container-additional-information" >
+                                            <div class="title-information-additional">
+                                                <h4>Additional Information</h4>
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </div>
+                                            <div class="text-information-additional">
+                                                <div><p><i class="fa-solid fa-language"></i> Guides in English, Portuguese and Spanish.</p></div>                   
+                                            </div>
+                                        </div> 
+                                        <div class="container-description">
+                                            <div class="title-description hidden">
+                                                <h4>Description</h4>
+                                                <i class="fa-solid fa-chevron-down"></i>
+                                            </div>
+                                            <div class="text-description">
+                                                <span><i class="fa-solid fa-car-side"></i> Old City</span>
+                                                    <br><ul class="tours__walking">
+                                                            <li>Sé Cathedral, Santa Luzia & Doors of the Sun Viewpoints, Lady of the Hill Viewpoint, Church of Saint Vincent, National Pantheon, Alfama, Commerce Square, Portuguese Navy, Ribeira das Naus.</li>
+                                                        </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </section>
+                                <p>
+                                
+                                </p>
+                            </div>
+
+                        </div>
+                        <div class="swiper-button-next slider-btn"></div>
+                        <div class="swiper-button-prev slider-btn"></div>  
+                        <div class="swiper-pagination"></div>
+                    
+                        
+                    </div>
+            </section>
+               <!-- <section class="description-additional">
+            <div class="tittle__description-additional">
+                <h2>Group tours <br><span> what are they going to do?</span></h2>
+            </div>
+            <div class="contenedor__description-additional" >
+                <div class="container-additional-information" >
+                    <div class="title-information-additional">
+                        <h4>Additional Information</h4>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="text-information-additional">
+                        <div><p><i class="fa-solid fa-language"></i> Guides in English, Portuguese and Spanish.</p></div>                   
+                        <div><p><i class="fa fa-taxi"></i> Driver Guide</p></div>
+                    </div>
+                </div> 
+                <div class="container-description">
+                    <div class="title-description hidden">
+                        <h4>Description</h4>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="text-description">
+                        <span><i class="fa-solid fa-car-side"></i>
+                            Driver Guide </span>
+                        <p>Our tuk tuk tours in Lisbon offer more than just breathtaking views; we weave the fascinating history of                
+                        <span><i class="fa fa-location-arrow" aria-hidden="true"></i> Explore the captivating Portuguese city</span>
+                            <p> Tour:
+                                <ul class="centrar__list list__tours">
+                                    <li>Torre de Belém</li>
+                                    <li>Padrão dos Descobrimentos</li>
+                                    <li>Praça do Império </li>
+                                    <li>Mosteiro dos Jerónimos</li>
+                                    <li>Igreja de Santa Maria de Belém</li>
+                                    <li>Pastéis de Belém</li>
+                                    <li>Miradouro da senhora do Monte</li>
+                                    <li>Praça do Comércio</li>
+                                    <li>Miradouro de São Pedro de Alcântara</li>
+                                </ul>
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+      </section>
+</section>
+
+<!------------------ Transfers TukTuk ----------------->
+<section class="seccion-tours">       
+    <section class="container__seccion-tours">                   
+            <div class="tittle__servicios">
+                <h1 id="tuktuk">Tuk Tuk Transfer</h1>
+            </div>
+            <main class="main__servicios">
+                    <!-- <div class="bgImage__servicios bg-tuk"><div class="overlay"></div></div>
+                    <div class="tittle__tour"> 
+                        <h2>Transfer Lisbon</h2>
+                    </div> -->
+                    <div class="container__social">
+                        <h4>Share</h4>
+                        <div class="social-link btn-tours">
+                            <a href="http://www.facebook.com/sharer.php?u=https://tagustours.pt/servicios.html#tuktuk" class="share__facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                            <a href="mailto:?subject=Take a look at this website!&body=Select a tour https://www.tagustours.pt/servicios" class="share__instagram" target="_blank"><i class="fa fa-envelope"></i></a>
+                            <a href="https://api.whatsapp.com/send?text=http://tagustours.pt/servicios.html" target="_blank" class="share__whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+            </main>
+            <section class="container__info">
+                    <div class="products__info mySwiper">
+                        <div class="contenedor-ind__products swiper-wrapper">
+                        
+
+                            <div class="slide__products swiper-slide">
+                                <div class="precio__servicios">
+                                    <!-- <p> per person  -->
+                                    <span> €20 </span>
+                                </div> 
+                                <div class="text-precio">
+                                    <div><p><i class="fa-regular fa-clock"></i> Duration 00:10hr</p></div>
+                                    <!-- <div><p><i class="fa-solid fa-money-check"></i> €250 (Per person €125)</p></div> -->
+                                    <div><p><i class="fa-solid fa-people-group"></i> Up to 4 people</p></div>
+                                </div>
+                                <div class="cont__btn-center">
+                                <a href="https://wa.me/p/6186435424788125/351933848910" class="boton btn-center" target="_blank">Book Now</a>
+                                </div> 
+                               
+                            </div>
+
+                            <div class="slide__products swiper-slide">
+                                <div class="precio__servicios">
+                                    <!-- <p> per person  -->
+                                    <span> €50 </span>
+                                </div> 
+                                <div class="text-precio">
+                                    <div><p><i class="fa-regular fa-clock"></i> Duration 00:30hr</p></div>
+                                    <!-- <div><p><i class="fa-solid fa-money-check"></i> €250 (Per person €125)</p></div> -->
+                                    <div><p><i class="fa-solid fa-people-group"></i> Up to 4 people</p></div>
+                                </div>
+                                <div class="cont__btn-center">
+                                <a href="https://wa.me/p/6186435424788125/351933848910" class="boton btn-center" target="_blank">Book Now</a>
+                                </div> 
+                               
+                            </div>
+
+
+
+                        </div>
+                        <div class="swiper-button-next slider-btn"></div>
+                        <div class="swiper-button-prev slider-btn"></div>  
+                        <div class="swiper-pagination"></div>
+                    
+                        
+                    </div>
+            </section>
+               <!-- <section class="description-additional">
+            <div class="tittle__description-additional">
+                <h2>Group tours <br><span> what are they going to do?</span></h2>
+            </div>
+            <div class="contenedor__description-additional" >
+                <div class="container-additional-information" >
+                    <div class="title-information-additional">
+                        <h4>Additional Information</h4>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="text-information-additional">
+                        <div><p><i class="fa-solid fa-language"></i> Guides in English, Portuguese and Spanish.</p></div>                   
+                        <div><p><i class="fa fa-taxi"></i> Driver Guide</p></div>
+                    </div>
+                </div> 
+                <div class="container-description">
+                    <div class="title-description hidden">
+                        <h4>Description</h4>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="text-description">
+                        <span><i class="fa-solid fa-car-side"></i>
+                            Driver Guide </span>
+                        <p>Our tuk tuk tours in Lisbon offer more than just breathtaking views; we weave the fascinating history of                
+                        <span><i class="fa fa-location-arrow" aria-hidden="true"></i> Explore the captivating Portuguese city</span>
+                            <p> Tour:
+                                <ul class="centrar__list list__tours">
+                                    <li>Torre de Belém</li>
+                                    <li>Padrão dos Descobrimentos</li>
+                                    <li>Praça do Império </li>
+                                    <li>Mosteiro dos Jerónimos</li>
+                                    <li>Igreja de Santa Maria de Belém</li>
+                                    <li>Pastéis de Belém</li>
+                                    <li>Miradouro da senhora do Monte</li>
+                                    <li>Praça do Comércio</li>
+                                    <li>Miradouro de São Pedro de Alcântara</li>
+                                </ul>
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+      </section>
+</section>
+
+<!------------------ FIN Transfers TukTuk ----------------->
+
+
+
+<section class="seccion-tours">
+    <section class="container__seccion-tours">
+        <div class="tittle__servicios">
+            <h1 id="walking">Walking Tours</h1>
+        </div>
+        <main class="main__servicios">
+                <div class="bgImage__servicios bg-walking"><div class="overlay"></div></div>
+                <div class="tittle__tour"> 
+                    <h2>Discover Lisbon on foot, exploring every detail</h2>
+                </div>
+                <div class="container__social">
+                    <h4>Share</h4>
+                    <div class="social-link btn-tours">
+                        <a href="http://www.facebook.com/sharer.php?u=https://demo.tagustours.pt/servicios.html#walking" class="share__facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="mailto:?subject=Take a look at this website!&body=Select a tour https://www.tagustours.pt/servicios" class="share__instagram" target="_blank"><i class="fa fa-envelope"></i></a>
+                        <a href="https://api.whatsapp.com/send?text=http://https://demo.tagustours.pt/servicios.html" target="_blank" class="share__whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+        </main>
+
+        <section class="container__info">
+            <div class="products__info mySwiper">
+                <div class="contenedor-ind__products swiper-wrapper">
+                    <div class="slide__products swiper-slide">
+                        <div class="precio__servicios">
+                                <span> € 160 </span>
+                        </div> 
+                        <div class="text-precio">
+                            <div><p><i class="fa-regular fa-clock"></i> Duration 04:00hr</p></div>
+                            <!-- <div><p><i class="fa-solid fa-money-check"></i> €240 (Per person €60)</p></div> -->
+                            <div><p><i class="fa-solid fa-people-group"></i> Up to 8 people</p></div>
+                        </div>
+                        <div class="cont__btn-center">
+                        <a href="https://wa.me/p/6567859913282307/351933848910" class="boton btn-center" target="_blank">Book Now</a>
+                        </div>
+                        <div class="details__slider">
+                            <h4><i class="fa-solid fa-language"></i> Guides in English, Portuguese and Spanish.</h4>
+                            <!-- <h4><i class="fa-regular fa-clock"></i> Flexible Schedule </h4>    -->
+                        </div>
+                        <div class="contenedor__detail">
+                            <h3><i class="fa-solid fa-person-walking"></i> Get to know Lisbon intimately as you wander through its streets </h3>
+                                <p>Main attractions:
+                                    <ul class="tours__walking">
+                                        <li>Rossio Square, Augusta Street y Alfama</li>
+                                        <li>Sé Cathedral, Saint Jorge's Castle, viewpoints of Saint Luzia, Doors of the Sun view point, Old Square, Fado Museum.</li>
+                                        <li>Baixa - Terreiro do Paço, Commerce Square, Portuguese Navy</li>
+                                        <li>Cais do Sodré</li>
+                                        <li>Chiado </li>
+                                        <li>Bairro Alto </li>
+                                        <li>Saint Peter of Alcantara Viewpoint".</li>
+                                        <li>Portuguese cuisine (Tasting not included)</li>
+                                    </ul>
+                                </p>
+                        </div>
+                        
+                        
+                        <!-- <span><i class="fa fa-location-arrow" aria-hidden="true"></i> Explore the captivating Portuguese city</span> -->
+                    </div>
+
+                    <div class="slide__products swiper-slide">
+                        <div class="precio__servicios">
+                            <!-- <p> per person  -->
+                                <span> € 130 </span>
+                        </div> 
+                        <div class="text-precio">
+                            <div><p><i class="fa-regular fa-clock"></i> Duration 03:00hr</p></div>
+                            <!-- <div><p><i class="fa-solid fa-money-check"></i> €285 (Per person €95)</p></div> -->
+                            <div><p><i class="fa-solid fa-people-group"></i> Up to 8 people</p></div>
+                        </div>
+                        <div class="cont__btn-center">
+                        <a href="https://wa.me/p/23909366575321236/351933848910" class="boton btn-center" target="_blank">Book Now</a>
+                        </div>
+                        <div class="details__slider">
+                            <h4><i class="fa-solid fa-language"></i> Guides in English, Portuguese and Spanish.</h4>
+                            <!-- <h4><i class="fa-regular fa-clock"></i> Flexible Schedule </h4>    -->
+                        </div>
+                        <div class="contenedor__detail">
+                            <h3><i class="fa-solid fa-person-walking"></i> Get to know Lisbon intimately as you wander through its streets </h3>
+                                <p>Main attractions:
+                                    <ul class="tours__walking">
+                                        <li>Rossio Square, Augusta Street y Alfama</li>
+                                        <li>Sé Cathedral, Saint Jorge's Castle, viewpoints of Saint Luzia, Doors of the Sun view point, Old Square, Fado Museum.</li>
+                                        <li>Baixa - Terreiro do Paço, Commerce Square, Portuguese Navy</li>
+                                        <li>Cais do Sodré</li>
+                                        <li>Chiado </li>
+                                        <li>Bairro Alto </li>
+                                        <li>Saint Peter of Alcantara Viewpoint</li>
+                                    </ul>
+                                </p>
+                        </div>
+                    </div>
+
+                    <div class="slide__products swiper-slide">
+                        <div class="precio__servicios">
+                            <!-- <p> per person  -->
+                            <span> €90 </span>
+                        </div> 
+                        <div class="text-precio">
+                            <div><p><i class="fa-regular fa-clock"></i> Duration 02:00hr</p></div>
+                            <!-- <div><p><i class="fa-solid fa-money-check"></i> €250 (Per person €125)</p></div> -->
+                            <div><p><i class="fa-solid fa-people-group"></i> Up to 8 people</p></div>
+                        </div>
+                        <div class="cont__btn-center">
+                        <a href="https://wa.me/p/6542724205787507/351933848910" class="boton btn-center" target="_blank">Book Now</a>
+                        </div> 
+                        <div class="details__slider">
+                            <h4><i class="fa-solid fa-language"></i> Guides in English, Portuguese and Spanish.</h4>
+                        </div>
+                        <div class="contenedor__detail">
+                            <h3><i class="fa-solid fa-person-walking"></i> Get to know Lisbon intimately as you wander through its streets </h3>
+                                <p>Main attractions:
+                                    <ul class="tours__walking">
+                                        <li>Rossio Square, Augusta Street y Alfama</li>
+                                        <li>Sé Cathedral, Saint Jorge's Castle, viewpoints of Saint Luzia, Doors of the Sun view point, Old Square, Fado Museum.</li>
+                                        <li>Baixa - Terreiro do Paço, Commerce Square, Portuguese Navy</li>
+                                        <li>Cais do Sodré</li>   
+                                    </ul>
+                                </p>
+                        </div>
+                    </div>
+                    <div class="slide__products swiper-slide">
+                        <div class="precio__servicios">
+                            <!-- <p> per person  -->
+                            <span> € 50 </span>
+                        </div> 
+                        <div class="text-precio">
+                            <div><p><i class="fa-regular fa-clock"></i> Duration 01:00hr</p></div>
+                            <!-- <div><p><i class="fa-solid fa-money-check"></i> €225</p></div> -->
+                            <div><p><i class="fa-solid fa-people-group"></i> Up to 8 People</p></div>
+                        </div>
+                        <div class="cont__btn-center">
+                        <a href="https://wa.me/p/5680597355398636/351933848910" class="boton btn-center" target="_blank">Book Now</a>
+                        </div> 
+                        <div class="details__slider">
+                            <h4><i class="fa-solid fa-language"></i> Guides in English, Portuguese and Spanish.</h4>
+                        </div>
+                        <div class="contenedor__detail">
+                            <h3><i class="fa-solid fa-person-walking"></i> Get to know Lisbon intimately as you wander through its streets </h3>
+                                <p>Main attractions:
+                                    <ul class="tours__walking">
+                                        <li>Rossio Square, Augusta Street y Alfama</li>
+                                        <li>Sé Cathedral, Saint Jorge's Castle, viewpoints of Saint Luzia, Doors of the Sun view point, Old Square, Fado Museum.</li>                    
+                                    </ul>
+                                </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next slider-btn"></div>
+                <div class="swiper-button-prev slider-btn"></div>
+                
+                <div class="swiper-pagination"></div>
+               
+            </div>
+    </section>
+     
+    </section>
+
+
+</section>
+
+<section class="seccion-tours">
+    <section class="container__seccion-tours">
+        <div class="tittle__servicios">
+            <h1 id="bike">Bike Tours</h1>
+        </div>
+        <main class="main__servicios">
+                <div class="bgImage__servicios bg-bike"><div class="overlay"></div></div>
+                <div class="tittle__tour"> 
+                    <h2>Live Lisbon by bike</h2>
+                </div>
+                <div class="container__social">
+                    <h4>Share</h4>
+                    <div class="social-link btn-tours">
+                        <a href="http://www.facebook.com/sharer.php?u=https://demo.tagustours.pt/servicios.html#bike" class="share__facebook" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="mailto:?subject=Take a look at this website!&body=Select a tour https://www.tagustours.pt/servicios" class="share__instagram" target="_blank"><i class="fa fa-envelope"></i></a>
+                        <a href="https://api.whatsapp.com/send?text=http://demo.tagustours.pt/servicios.html" target="_blank" class="share__whatsapp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+        </main>
+
+        <section class="container__info">
+                <div class="products__info mySwiper">
+                    <div class="contenedor-ind__products swiper-wrapper">
+                       
+                        <div class="slide__products swiper-slide">
+                            <div class="precio__servicios">
+                                <!-- <p> per person  -->
+                                    <p> per person <span> € 35 </span></p>
+                                </div> 
+                            <div class="text-precio">
+                                <!-- <div><p><i class="fa-solid fa-money-check"></i> More than 4 pax</p></div> -->
+                                <div><p><i class="fa-solid fa-people-group"></i>More than 4, up to 8 people</p></div>
+
+                                <div><p><i class="fa-regular fa-clock"></i> Duration 02:30hr</p></div>
+                            </div>
+                            <div class="cont__btn-center">
+                            <a href="https://wa.me/p/6057268064378110/351933848910" class="boton btn-center" target="_blank">Book Now</a>
+                            </div>
+                        </div>
+
+                        <div class="slide__products swiper-slide">
+                            <div class="precio__servicios">
+                                <!-- <p> per person  -->
+                                    <p> per person <span> € 42.5 </span></p>
+                                </div> 
+                            <div class="text-precio">
+                                <!-- <div><p><i class="fa-solid fa-money-check"></i> More than 4 pax</p></div> -->
+                                <div><p><i class="fa-solid fa-people-group"></i>4 people</p></div>
+
+                                <div><p><i class="fa-regular fa-clock"></i> Duration 02:30hr</p></div>
+                            </div>
+                            <div class="cont__btn-center">
+                            <a href="https://wa.me/p/6057268064378110/351933848910" class="boton btn-center" target="_blank">Book Now</a>
+                            </div>
+                        </div>
+
+                        <div class="slide__products swiper-slide">
+                            <div class="precio__servicios">
+                                <!-- <p> per person  -->
+                                    <p> per person <span> € 50 </span></p>
+                            </div> 
+                            <div class="text-precio">
+                                <!-- <div><p><i class="fa-solid fa-money-check"></i> €285 (Per person €95)</p></div> -->
+                                <div><p><i class="fa-solid fa-people-group"></i> 3 people</p></div>
+                                <div><p><i class="fa-regular fa-clock"></i> Duration 02:30hr</p></div>
+
+                            </div>
+                            <div class="cont__btn-center">
+                            <a href="https://wa.me/p/6370029473051945/351933848910" class="boton btn-center" target="_blank">Book Now</a>
+                            </div>
+                        </div>
+
+                        <div class="slide__products swiper-slide">
+                            <div class="precio__servicios">
+                                <!-- <p> per person  -->
+                                    <p> per person <span> € 65 </span></p>
+                            </div> 
+                            <div class="text-precio">
+                                <!-- <div><p><i class="fa-solid fa-money-check"></i> €130 </p></div> -->
+                                <div><p><i class="fa-solid fa-people-group"></i> 2 people</p></div>
+                                <div><p><i class="fa-regular fa-clock"></i> Duration 02:30hr</p></div>
+
+                            </div>
+                            <div class="cont__btn-center">
+                            <a href="https://wa.me/p/6186435424788125/351933848910" class="boton btn-center" target="_blank">Book Now</a>
+                            </div> 
+                        </div>
+                        <div class="slide__products swiper-slide">
+                            <div class="precio__servicios">
+                                <!-- <p> per person  -->
+                                    <p> per person <span> € 115 </span></p>
+                            </div> 
+                            <div class="text-precio">
+                                <!-- <div><p><i class="fa-solid fa-money-check"></i> €225</p></div> -->
+                                <div><p><i class="fa-solid fa-people-group"></i> 1 person</p></div>
+                                <div><p><i class="fa-regular fa-clock"></i> Duration 02:30hr</p></div>
+
+                            </div>
+                            <div class="cont__btn-center">
+                            <a href="https://wa.me/p/6433569643403383/351933848910" class="boton btn-center" target="_blank">Book Now</a>
+                            </div> 
+                        </div>
+                    </div>
+                    <div class="swiper-button-next slider-btn"></div>
+                    <div class="swiper-button-prev slider-btn"></div>               
+                    <div class="swiper-pagination"></div>
+                </div>
+        </section>
+        <section class="description-additional">
+            <div class="tittle__description-additional">
+                <h2>The best panoramic views of Lisbon <br><span></span></h2>
+            </div>
+            <div class="contenedor__description-additional" >
+                <div class="container-additional-information" >
+                    <div class="title-information-additional">
+                        <h4>Additional Information</h4>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="text-information-additional">
+                        <div><p><i class="fa fa-bicycle"></i> Guide</p></div>
+                        <div><p><i class="fa-solid fa-language"></i> Guides in English, Portuguese and Spanish.</p></div>                   
+                    </div>
+                </div> 
+                <div class="container-description">
+                    <div class="title-description hidden">
+                        <h4>Description</h4>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </div>
+                    <div class="text-description">
+                        <!-- <span><i class="fa fa-bicycle"></i> Guide </span>
+                        <p>Our tuk tuk tours in Lisbon offer more than just breathtaking views; we weave the fascinating history of 
+                        Portugal into every journey. </p> -->
+                        <span><i class="fa-regular fa-clock"></i> Flexible Schedule</span>               
+                            <p> Tour:
+                                <ul class="centrar__list list__tours">
+                                    <li>Commerce Square</li>
+                                    <li>Tabaco Pier</li>
+                                    <li>Portuguese Navy</li>
+                                    <li>Cais do Sodré </li>
+                                    <li>Saints</li>
+                                    <li>Belém</li>
+                                    <li>Belém pastries</li>
+                                </ul>
+                            </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+</section>
+
+
+
+<section class="section__idioma">
+    <h1>Tours in your language</h1>
+    <div class="elemento__idioma">
+        <img src="img/reino-unido.png" alt="">
+        <img src="img/espana.png" alt="">
+        <img src="img/portugal.png" alt="">
+    </div>
+</section>
+    
+<div class="follow-instagram">
+        <h3>Follow us on Instagram</h3>
+        <a href="https://www.instagram.com/tagus_tours_lisbon/" target="_blank"> <i class="fab fa-instagram"></i> @tagus_tours_lisbon </a>
+</div>
+<footer class="footer">
+    <div class="footer-container">
+        <div class="footer-row">
+            <div class="footer-links">
+                <h4>Tagus Tours</h4>
+                <li> <a class="active" href="index.html">Home</a></li>
+                <li> <a href="servicios.html">Tours</a></li>
+                <li> <a href="nosotros.html">About</a></li>
+                <li> <a href="contacto.html">Contact Us</a></li>
+            </div>
+            <div class="footer-links">
+                <h4>Experiences</h4>
+                <li> <a href="servicios.html#suggestion">Our Suggestion!</a></li>
+                <li> <a href="servicios.html#tuktuk" target="_blank">Tuk Tuk</a></li>
+                <li> <a href="servicios.html#bike" target="_blank">Bike</a></li>
+                <li> <a href="servicios.html#walking" target="_blank">Walking</a></li>
+                <!-- <li> <a href="#">Sintra</a></li> -->
+            </div>
+            <div class="footer-links">
+                <h4>Follows</h4>
+                <div class="social-link">
+                    <a href="https://www.facebook.com/tagustourslisbon" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/tagus_tours_lisbon/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://wa.me/351933848910" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                </div>
+                <div class="footer-complaints-book">
+                    <h4>Complaints Book</h4>
+                    <div class="reclamos">
+                        <!-- <li> <a><i class="fab fa-facebook-f"></i></a> -->
+                       <a href="https://www.livroreclamacoes.pt/INICIO/" target="_blank">
+                        <img src="img/libro de reclamos blanco.png"  class="libro-reclamos">
+                       </a>
+                    </div>
+                </div>   
+            </div>          
+        </div>
+    </div>
+    <div class="derechos">
+        <p>All rights reserved. Tagus Tours Lisbon 2024</p>
+    </div>
+</footer>
+
+<script src="/JS/servicios2.js"></script>
+<script src="/JS/script.js "></script>
+<!-- <script src="/JS/servicios.js"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script> -->
+
+
+
+</body>
+
+
+</html>
