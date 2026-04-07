@@ -595,7 +595,7 @@ header {
     cursor: pointer;
     box-shadow: 3px 4px 15px rgba(0, 0, 0, 0.2);
     z-index: 99999; /* Asegura que esté por encima de otros elementos */
-    background-image: url(/img/WhatsApp_icon.png.webp);
+    background-image: url(../img/WhatsApp_icon.png.webp);
     background-repeat: no-repeat;
     background-size: 80%; /* Aquí ajusta el tamaño según tus necesidades */
     background-position: center; /* Centro la imagen */
@@ -768,7 +768,7 @@ header {
     height: 50px;
     width: 50px;
     border-radius: 25px;
-    background-image: url(/img/boton-enviar.png);
+    background-image: url(../img/boton-enviar.png);
     background-repeat: no-repeat;
     background-size: 50%; /* Aquí ajusta el tamaño según tus necesidades */
     background-position: center; /* Centro la imagen */
@@ -1253,7 +1253,7 @@ input[id="5"]:checked ~ .pagination .pagination-item[for="5"] {
 
 /* Contacto */
 .contenido__contacto {
-    /* background-image: url(/img/FONDO\ 3.png);
+    /* background-image: url(../img/FONDO\ 3.png);
     background-size: contain; */
     padding: 5rem 1rem;
 }
@@ -1271,7 +1271,7 @@ input[id="5"]:checked ~ .pagination .pagination-item[for="5"] {
     font-size: 2.5rem;
 }
 .formulario {
-    /* background-image: url(/img/FONDO\ 3.png); */
+    /* background-image: url(../img/FONDO\ 3.png); */
     background-size: cover;
     background-color: rgba(241, 244, 248, 0.75);
     width: min(90rem, 100%);
@@ -1379,7 +1379,7 @@ input[id="5"]:checked ~ .pagination .pagination-item[for="5"] {
 
 /* Footer */
 .footer {
-    background-image: url(/img/Footer\ Tagus\ 1.png);
+    background-image: url(../img/Footer\ Tagus\ 1.png);
     background-size: contain;
     /* padding: 60px 0; */
 }
@@ -1931,43 +1931,43 @@ margin-left: 0;}
     position: relative;
     width: 100%;
     height: 40rem;
-    background-image: url(/img/bg01.jpg);
+    background-image: url(../img/bg01.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     animation: bgChange 15s ease infinite;
 }
 @keyframes bgChange {
-    33.3% {background-image: url(/img/bg01.jpg);}
-    66.6% {background-image: url(/img/bg02.jpg);} 
-    99.9% {background-image: url(/img/bg03.jpg);}
+    33.3% {background-image: url(../img/bg01.jpg);}
+    66.6% {background-image: url(../img/bg02.jpg);} 
+    99.9% {background-image: url(../img/bg03.jpg);}
 }
 .bg-tuk{
     background-image: url(../img/torredebelem.jpg);
     animation: bgChange-tuk 15s ease infinite;
 }
 @keyframes bgChange-tuk {
-    33.3% {background-image: url(/img/saopalcantara.jpg);}
-    66.6% {background-image: url(/img/plazadoimpero.jpg);} 
-    99.9% {background-image: url(/img/torredebelem.jpg);}
+    33.3% {background-image: url(../img/saopalcantara.jpg);}
+    66.6% {background-image: url(../img/plazadoimpero.jpg);} 
+    99.9% {background-image: url(../img/torredebelem.jpg);}
 }
 .bg-walking{
     background-image: url(../img/rossiosquare.jpg);
     animation: bgChange-walking 15s ease infinite;
 }
 @keyframes bgChange-walking {
-    33.3% {background-image: url(/img/rossiosquare.jpg);}
-    66.6% {background-image: url(/img/miradorpuertasdesol.jpg);} 
-    99.9% {background-image: url(/img/secatedal.jpg);}
+    33.3% {background-image: url(../img/rossiosquare.jpg);}
+    66.6% {background-image: url(../img/miradorpuertasdesol.jpg);} 
+    99.9% {background-image: url(../img/secatedal.jpg);}
 }
 .bg-bike{
     background-image: url(../img/jeronimos.jpg);
     animation: bgChange-bike 15s ease infinite;
 }
 @keyframes bgChange-bike {
-    33.3% {background-image: url(/img/jeronimos.jpg);}
-    66.6% {background-image: url(/img/plazadecomercio.jpg);} 
-    99.9% {background-image: url(/img/caisdosodre.jpg);}
+    33.3% {background-image: url(../img/jeronimos.jpg);}
+    66.6% {background-image: url(../img/plazadecomercio.jpg);} 
+    99.9% {background-image: url(../img/caisdosodre.jpg);}
 }
 
 
