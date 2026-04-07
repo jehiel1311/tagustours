@@ -1,7 +1,10 @@
 
 
 //MENU HAMBURGUESA//
-document.querySelector(".bars__menu").addEventListener("click", animatebars);
+const barsMenu = document.querySelector(".bars__menu");
+if (barsMenu) {
+  barsMenu.addEventListener("click", animatebars);
+}
 
 var line1__bars = document.querySelector(".line1__bars-menu");
 var line2__bars = document.querySelector(".line2__bars-menu");
@@ -18,7 +21,9 @@ line3__bars.classList.toggle("activeline3__bars-menu");
 // BARRA DE NAVEGACION FIJA EN DESPTOK//
 window.addEventListener("scroll", function() {
   var header = document.querySelector(".header-nav");
-  header.classList.toggle("scrolled", window.scrollY > 0);
+  if (header) {
+    header.classList.toggle("scrolled", window.scrollY > 0);
+  }
 });
 
 //swipper Testimonial
@@ -30,7 +35,9 @@ let sliderTestimonialLast = sliderTestimonial[sliderTestimonial.length -1];
 const btnLeft = document.querySelector('#btn-left');
 const btnRigth = document.querySelector('#btn-rigth');
 
-slider.insertAdjacentElement('afterbegin', sliderTestimonialLast);
+if (slider && sliderTestimonialLast) {
+  slider.insertAdjacentElement('afterbegin', sliderTestimonialLast);
+}
 
 function Next () {
     let sliderTestimonialfirst = document.querySelectorAll('.slide-testimonial')[0];
@@ -53,12 +60,16 @@ function Prev () {
         slider.style.marginLeft = '-100%';
     }, 500);
 }
-btnRigth.addEventListener('click', function() {
-    Next ();
-});
-btnLeft.addEventListener('click', function() {
-    Prev ();
-});
+if (btnRigth) {
+  btnRigth.addEventListener('click', function() {
+      Next ();
+  });
+}
+if (btnLeft) {
+  btnLeft.addEventListener('click', function() {
+      Prev ();
+  });
+}
 // setInterval(function() {
 //   Next();
 // },5000);
@@ -76,18 +87,24 @@ function getRandomGreeting() {
 }
 
 // Actualiza el texto de saludo cada 5 segundos
-setInterval(function() {
-  greetingElement.textContent = getRandomGreeting();
-}, 5000);
+if (greetingElement) {
+  setInterval(function() {
+    greetingElement.textContent = getRandomGreeting();
+  }, 5000);
+}
 
-document.getElementById("ver-mas").addEventListener("click", function() {
-  // Aquí puedes agregar lógica para cargar más imágenes o mostrar las existentes en otro orden.
-  // Por ejemplo, podrías usar AJAX para cargar más imágenes desde un servidor.
-});
+const verMas = document.getElementById("ver-mas");
+if (verMas) {
+  verMas.addEventListener("click", function() {
+    // Aquí puedes agregar lógica para cargar más imágenes o mostrar las existentes en otro orden.
+    // Por ejemplo, podrías usar AJAX para cargar más imágenes desde un servidor.
+  });
+}
 
 const $form = document.querySelector('#form');
-
-$form.addEventListener('submit', handleSubmit)
+if ($form) {
+  $form.addEventListener('submit', handleSubmit);
+}
 
 function handleSubmit (event) {
 event.preventDefault()
@@ -99,8 +116,9 @@ event.preventDefault()
 //We support section//
 let hideText_btn = document.getElementById('hideText_btn');
 let hideText = document.getElementById('hideText');
-
-hideText_btn.addEventListener('click', toggleText);
+if (hideText_btn && hideText) {
+  hideText_btn.addEventListener('click', toggleText);
+}
 
 function toggleText () {
   hideText.classList.toggle('show');
